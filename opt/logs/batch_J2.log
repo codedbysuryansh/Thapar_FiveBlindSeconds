@@ -1,0 +1,8 @@
+candidate X060e-velaid-loeo-s4 created (main.py f92ed0a30c547deb)
+X060e-velaid-loeo-s4               ALL  +9.03% [ +3.56,+15.93] | EuRoC  +2.37% [ -3.46, +8.25] | TUM +82.79% [+48.44,+131.43] | ate  +3.0/+99.8 | ident 0 fail 0 dec 0 | ms 7.75->12.19
+candidate X060f-velaid-loeo-s8 created (main.py f92ed0a30c547deb)
+X060f-velaid-loeo-s8               ALL  +2.64% [ -0.77, +5.85] | EuRoC  +0.18% [ -3.51, +3.49] | TUM +29.64% [+15.02,+50.67] | ate  +0.4/+33.5 | ident 0 fail 0 dec 0 | ms 7.75->11.98
+candidate X060g-velaid-inpool-s4 created (main.py f92ed0a30c547deb)
+X060g-velaid-inpool-s4             ALL  -9.31% [-13.38, -6.02] | EuRoC  -8.19% [-11.72, -5.20] | TUM -20.89% [-37.71, -0.99] | ate  -8.9/-20.4 | ident 0 fail 0 dec 0 | ms 7.75->11.93
+candidate X060h-velaid-inpool-s8 created (main.py f92ed0a30c547deb)
+X060h-velaid-inpool-s8             ALL  -4.98% [ -7.76, -3.09] | EuRoC  -3.75% [ -5.69, -2.30] | TUM -18.24% [-29.01, -5.49] | ate  -3.7/-18.4 | ident 0 fail 0 dec 0 | ms 7.75->11.98

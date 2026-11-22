@@ -1,0 +1,10 @@
+candidate DEV0-dev-identity-J created (main.py f92ed0a30c547deb)
+DEV0-dev-identity-J                ALL  +0.00% [ +0.00, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 136 fail 0 dec 0 | ms 7.63->7.82
+candidate X060a-velaid-loeo-s1 created (main.py f92ed0a30c547deb)
+X060a-velaid-loeo-s1               ALL +53.74% [+38.09,+73.40] | EuRoC +34.60% [+20.58,+50.94] | TUM +264.33% [+216.57,+345.17] | ate +37.5/+307.8 | ident 0 fail 0 dec 0 | ms 7.75->13.45
+candidate X060b-velaid-loeo-s2 created (main.py f92ed0a30c547deb)
+X060b-velaid-loeo-s2               ALL +26.42% [+15.30,+40.11] | EuRoC +13.98% [ +3.62,+25.90] | TUM +163.85% [+121.02,+232.93] | ate +15.4/+193.7 | ident 0 fail 0 dec 0 | ms 7.75->12.99
+candidate X060c-velaid-inpool-s1 created (main.py f92ed0a30c547deb)
+X060c-velaid-inpool-s1             ALL  +5.06% [ -4.16,+17.71] | EuRoC  +2.60% [ -7.11,+15.58] | TUM +35.09% [ -2.99,+84.03] | ate  -6.7/+47.9 | ident 0 fail 0 dec 0 | ms 7.75->12.96
+candidate X060d-velaid-inpool-s2 created (main.py f92ed0a30c547deb)
+X060d-velaid-inpool-s2             ALL  -7.89% [-12.90, -1.64] | EuRoC  -7.97% [-13.00, -1.71] | TUM  -5.07% [-30.27,+27.14] | ate -11.9/ -0.7 | ident 0 fail 0 dec 0 | ms 7.75->12.57

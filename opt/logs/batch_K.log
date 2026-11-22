@@ -1,0 +1,12 @@
+candidate DEV0-dev-identity-K created (main.py e870d3bf349861a1)
+DEV0-dev-identity-K                ALL  +0.00% [ +0.00, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 136 fail 0 dec 0 | ms 7.63->7.96
+candidate X110a-guardloose created (main.py e870d3bf349861a1)
+X110a-guardloose                   ALL  +0.00% [ +0.00, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 136 fail 0 dec 0 | ms 7.75->8.07
+candidate X110b-guardloose-final12 created (main.py e870d3bf349861a1)
+X110b-guardloose-final12           ALL  -0.00% [ -0.03, +0.02] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -0.02% [ -0.37, +0.22] | ate  +0.0/ -0.3 | ident 88 fail 0 dec 0 | ms 7.75->8.26
+candidate X110c-guardloose-final8 created (main.py e870d3bf349861a1)
+X110c-guardloose-final8            ALL  +0.01% [ -0.06, +0.10] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.19% [ -0.67, +0.89] | ate  +0.0/ -0.4 | ident 88 fail 0 dec 0 | ms 7.75->8.00
+candidate X111a-blend-1.5-2.0 created (main.py e870d3bf349861a1)
+X111a-blend-1.5-2.0                ALL  -0.03% [ -0.24, +0.11] | EuRoC  -0.04% [ -0.27, +0.12] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.1/ +0.0 | ident 121 fail 0 dec 0 | ms 7.75->7.98
+candidate X111b-blend-1.6-1.9 created (main.py e870d3bf349861a1)
+X111b-blend-1.6-1.9                ALL  +0.05% [ -0.22, +0.31] | EuRoC  +0.05% [ -0.25, +0.34] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.2/ +0.0 | ident 125 fail 0 dec 0 | ms 7.75->7.88

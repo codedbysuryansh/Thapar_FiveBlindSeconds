@@ -1,0 +1,14 @@
+[
+ ["           rest_frac=0.5, rest_gate=0.06, switch_r=1.7)",
+  "           rest_frac=0.5, rest_gate=0.06, switch_r=1.7, clean_mu=0.002, clean_sw=0.04)"],
+ ["TAU_G_HAND = 24.0                                 # gravity-smoother time constant on the hand-held path [s]",
+  "TAU_G_HAND = 24.0                                 # gravity time constant of the final hand-held attitude when the gyro is clean [s]"],
+ ["    F = Front(D, TAU_G if rotor else TAU_G_HAND); base = Bias(", "    F = Front(D); base = Bias("],
+ ["    Dst = float(\"nan\"); coarse = False; _mark(\"front-const\")", "    Dst = float(\"nan\"); mu_n = float(\"inf\"); coarse = False; long_g = False; _mark(\"front-const\")"],
+ ["            Dst = math.sqrt(acc / N)", "            Dst = math.sqrt(acc / N); mu_n = float(np.linalg.norm(mu))"],
+ ["        else: att, bias, mode = att3, base, \"const\"\n    del att3; F.ii = None; _mark(\"front-final\")",
+  "        else: att, bias, mode = att3, base, \"const\"\n        if mode == \"const\" and mu_n <= CFG[\"clean_mu\"] and gyro_noise(D, F.N) <= CFG[\"clean_sw\"]:   # clean gyro: slower gravity, less leaked motion\n            F.gs = GravitySmoother(D, CFG[\"gs_dec\"], TAU_G_HAND, CFG[\"k2\"]); att, _o = F.attitude(bias); del _o; long_g = True\n    del att3; F.ii = None; _mark(\"front-final\")"],
+ ["    info = dict(rotor_gate=bool(rotor), rotor=bool(is_rotor), guard=guard, steady_drag=steady,", "    info = dict(rotor_gate=bool(rotor), rotor=bool(is_rotor), guard=guard, steady_drag=steady, long_gravity=long_g,"],
+ ["def coarse_bias(D, F, kp=1.0, ki=0.3, smooth=5.0):",
+  "def gyro_noise(D, N):\n    \"\"\"Gyro sample noise [rad/s]: standard deviation of first differences of consecutive valid raw samples / sqrt(2).\"\"\"\n    s1 = 0.0; s2 = 0.0; n = 0\n    for c0 in range(0, N, CH):\n        c1 = min(N, c0 + CH + 1); vv = D.valid[c0:c1]; dd = np.diff(D.decode(c0, c1, \"w\"), axis=0)[vv[1:] & vv[:-1]]\n        if len(dd): s1 += float(dd.sum()); s2 += float((dd * dd).sum()); n += dd.size\n    return math.sqrt(max(s2 / n - (s1 / n) ** 2, 0.0) / 2.0) if n else float(\"inf\")\ndef coarse_bias(D, F, kp=1.0, ki=0.3, smooth=5.0):"]
+]

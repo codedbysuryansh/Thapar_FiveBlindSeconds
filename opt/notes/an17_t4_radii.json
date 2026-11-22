@@ -1,0 +1,522 @@
+[
+ {
+  "case": [
+   "E46",
+   "clean",
+   "MH_02_easy",
+   0
+  ],
+  "champ": {
+   "ate": 4.187555225549471,
+   "wp": 4.02933645618012,
+   "b_abs": 2.6434912536899366,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.22397269119742266,
+   "rr0": 1.035853673526106,
+   "rr": 1.035853673526106,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 4.722885705902696,
+   "wp": 4.623993144981229,
+   "b_abs": 3.3325718579724826,
+   "rotor_gate": true,
+   "rotor": false,
+   "guard": true,
+   "mode": "spline",
+   "rh": 0.22087310279135494,
+   "rr0": 2.0136716629290494,
+   "rr": 3.6685812510882023,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "gap_3x4",
+   "MH_02_easy",
+   0
+  ],
+  "champ": {
+   "ate": 3.97830996688027,
+   "wp": 3.8170642688899625,
+   "b_abs": 2.6604263488422255,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.1993675450710469,
+   "rr0": 1.642063792489623,
+   "rr": 1.642063792489623,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 4.728722358500782,
+   "wp": 4.632265944657821,
+   "b_abs": 3.3325814314930557,
+   "rotor_gate": true,
+   "rotor": false,
+   "guard": true,
+   "mode": "spline",
+   "rh": 0.19543035216638718,
+   "rr0": 3.0576223216484673,
+   "rr": 5.594990590190662,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "gain_x2",
+   "MH_04_difficult",
+   0
+  ],
+  "champ": {
+   "ate": 6.215158089487065,
+   "wp": 3.5427530375155563,
+   "b_abs": 12.521772477344223,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.21074527996612027,
+   "rr0": 2.483485693349707,
+   "rr": 2.483485693349707,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 7.034078486674703,
+   "wp": 5.191017195453027,
+   "b_abs": 11.907773571136854,
+   "rotor_gate": true,
+   "rotor": false,
+   "guard": true,
+   "mode": "spline",
+   "rh": 0.2102370279102231,
+   "rr0": 2.2959840633102484,
+   "rr": 3.7621982645975627,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "noise_heavy",
+   "MH_01_easy",
+   0
+  ],
+  "champ": {
+   "ate": 4.845434236452295,
+   "wp": 4.5979602677996105,
+   "b_abs": 4.517563251092176,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.4536230484428989,
+   "rr0": 2.5610274141056446,
+   "rr": 2.5610274141056446,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 4.63302157399673,
+   "wp": 4.7036011307522285,
+   "b_abs": 1.9656837239680998,
+   "rotor_gate": true,
+   "rotor": false,
+   "guard": true,
+   "mode": "spline",
+   "rh": 0.4434601554950972,
+   "rr0": 2.23077265551976,
+   "rr": 5.851555409609653,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "acc_ramp_1",
+   "V2_02_medium",
+   0
+  ],
+  "champ": {
+   "ate": 1.457932311881195,
+   "wp": 1.325696650006966,
+   "b_abs": 1.6403406255907251,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.9698339738218833,
+   "rr0": 1.9703491771064299,
+   "rr": 1.9703491771064299,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 4.104790940073501,
+   "wp": 3.422452883853523,
+   "b_abs": 8.597124409606177,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.970545848071204,
+   "rr0": 1.9646473239292814,
+   "rr": 4.451489274181491,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "acc_ramp_1",
+   "MH_03_medium",
+   0
+  ],
+  "champ": {
+   "ate": 2.6035571995827906,
+   "wp": 2.3535662754952353,
+   "b_abs": 5.621276802113102,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 1.204888285094889,
+   "rr0": 2.0474281558396257,
+   "rr": 2.0474281558396257,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 3.4257366080437337,
+   "wp": 2.685668514327812,
+   "b_abs": 7.040575699444787,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 1.1998232216012357,
+   "rr0": 2.055862263702636,
+   "rr": 5.065304638190937,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "acc_ramp_1",
+   "MH_02_easy",
+   0
+  ],
+  "champ": {
+   "ate": 4.062397239094841,
+   "wp": 3.885263521867871,
+   "b_abs": 4.389835732958046,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.27085150205718866,
+   "rr0": 1.2768424301883148,
+   "rr": 1.2768424301883148,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 4.715718778794156,
+   "wp": 4.642806611825964,
+   "b_abs": 3.5201776658584274,
+   "rotor_gate": true,
+   "rotor": false,
+   "guard": true,
+   "mode": "spline",
+   "rh": 0.26767606359370505,
+   "rr0": 2.1993494421450577,
+   "rr": 5.122677091855104,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "acc_ramp_1",
+   "room1",
+   0
+  ],
+  "champ": {
+   "ate": 0.9348095645654402,
+   "wp": 0.7350686314618187,
+   "b_abs": 1.2064502314297292,
+   "rotor_gate": false,
+   "rotor": false,
+   "guard": false,
+   "mode": "const",
+   "rh": null,
+   "rr0": null,
+   "rr": null,
+   "tight": null,
+   "mu": 0.0013223304668877078,
+   "sw": 0.013593521410222919,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 1.202397575359863,
+   "wp": 1.0644998211888257,
+   "b_abs": 1.231814516932598,
+   "rotor_gate": false,
+   "rotor": false,
+   "guard": false,
+   "mode": "const",
+   "rh": null,
+   "rr0": null,
+   "rr": null,
+   "tight": null,
+   "mu": 0.0013223304668877078,
+   "sw": 0.013593521410222919,
+   "final_long": true
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "ramp_r_0.0005",
+   "room1",
+   0
+  ],
+  "champ": {
+   "ate": 0.7738520009345715,
+   "wp": 0.4653738225395573,
+   "b_abs": 1.2575520178054045,
+   "rotor_gate": false,
+   "rotor": false,
+   "guard": false,
+   "mode": "const",
+   "rh": null,
+   "rr0": null,
+   "rr": null,
+   "tight": null,
+   "mu": 0.0018066142893079292,
+   "sw": 0.013593525282318879,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 1.1754864989481355,
+   "wp": 0.9150110117788857,
+   "b_abs": 1.0268819555407034,
+   "rotor_gate": false,
+   "rotor": false,
+   "guard": false,
+   "mode": "const",
+   "rh": null,
+   "rr0": null,
+   "rr": null,
+   "tight": null,
+   "mu": 0.0018066142893079292,
+   "sw": 0.013593525282318879,
+   "final_long": true
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "rampwin_0.05_10s_persist",
+   "MH_05_difficult",
+   0
+  ],
+  "champ": {
+   "ate": 6.005718916628664,
+   "wp": 5.355920267549485,
+   "b_abs": 5.881612283557859,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.8598075202595827,
+   "rr0": 2.562443642567236,
+   "rr": 2.562443642567236,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 7.831885869206946,
+   "wp": 6.707189366999929,
+   "b_abs": 9.288519709194125,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 2.115862625335576,
+   "rr0": 3.9264128032020005,
+   "rr": 5.956111252090687,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "ramp_r_0.01",
+   "V1_01_easy",
+   0
+  ],
+  "champ": {
+   "ate": 1.8847960376474282,
+   "wp": 1.862151610982487,
+   "b_abs": 0.60197579225005,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.8055551651009776,
+   "rr0": 1.8790289921058605,
+   "rr": 1.8790289921058605,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 2.3582848891917747,
+   "wp": 2.276407569279757,
+   "b_abs": 0.26082068224165106,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.8073719562978117,
+   "rr0": 1.8384918414018798,
+   "rr": 2.1364642037373947,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "L2+ramp_x_0.002",
+   "V2_02_medium",
+   0
+  ],
+  "champ": {
+   "ate": 1.7549637496852906,
+   "wp": 1.676224388123934,
+   "b_abs": 2.7972713398647993,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.5555701580211115,
+   "rr0": 1.7549875685577836,
+   "rr": 1.7549875685577836,
+   "tight": false,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 2.1133523524358124,
+   "wp": 1.8861564107444677,
+   "b_abs": 3.814681484736905,
+   "rotor_gate": true,
+   "rotor": true,
+   "guard": false,
+   "mode": "spline",
+   "rh": 0.5577368038250738,
+   "rr0": 1.7374289632314988,
+   "rr": 2.2991230746296245,
+   "tight": true,
+   "mu": null,
+   "sw": null,
+   "final_long": null
+  }
+ },
+ {
+  "case": [
+   "E46",
+   "half_rate",
+   "room1",
+   0
+  ],
+  "champ": {
+   "ate": 0.40376356310456524,
+   "wp": 0.20178057991550008,
+   "b_abs": 1.1246077982653855,
+   "rotor_gate": false,
+   "rotor": false,
+   "guard": false,
+   "mode": "const",
+   "rh": null,
+   "rr0": null,
+   "rr": null,
+   "tight": null,
+   "mu": 0.0008277088271827656,
+   "sw": 0.027072050640635073,
+   "final_long": null
+  },
+  "rc110b": {
+   "ate": 0.4240274395428239,
+   "wp": 0.26459415558763677,
+   "b_abs": 1.1242521393408726,
+   "rotor_gate": false,
+   "rotor": false,
+   "guard": false,
+   "mode": "spline",
+   "rh": null,
+   "rr0": null,
+   "rr": null,
+   "tight": null,
+   "mu": 0.0075776565199401555,
+   "sw": 0.027072050640635073,
+   "final_long": null
+  }
+ }
+]

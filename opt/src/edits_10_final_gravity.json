@@ -1,0 +1,6 @@
+[
+ ["           drag_switch_r=None)                                     # X044: re-smooth with drag_tight when the rotor solution's radius >= this (m)",
+  "           drag_switch_r=None,                                     # X044: re-smooth with drag_tight when the rotor solution's radius >= this (m)\n           tau_g_final_hand=None, final_const_only=1)              # X045: hand-held final attitude re-computed with this gravity time constant (bias and mode from the 3 s front end)"],
+ ["    del att3; F.ii = None; _mark(\"front-final\")",
+  "    if (not rotor) and CFG[\"tau_g_final_hand\"] is not None and (mode == \"const\" or not CFG[\"final_const_only\"]):\n        F.gs = GravitySmoother(D, CFG[\"gs_dec\"], CFG[\"tau_g_final_hand\"], CFG[\"k2\"]); att, _o = F.attitude(bias); del _o   # X045\n    del att3; F.ii = None; _mark(\"front-final\")"]
+]

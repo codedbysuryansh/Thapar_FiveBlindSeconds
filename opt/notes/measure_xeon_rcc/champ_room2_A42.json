@@ -1,0 +1,75 @@
+{
+ "input": "/mnt/user-data/uploads/SamsungPRISM_FiveBlindSeconds/data/phase4/inputs/room2_A42.zip",
+ "rows": 27879,
+ "imu_seconds": 144.11239200000003,
+ "machine": {
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.13.18",
+  "processor": "x86_64",
+  "numpy": "2.5.3",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz"
+ },
+ "heap_MB": {
+  "after_imports": 2.452225,
+  "after_numpy": 2.959331,
+  "whole_program": 11.007155,
+  "interpreter": 13.056451
+ },
+ "stage_heap_MB": {
+  "start": 0.071103,
+  "parse+grid": 1.626775,
+  "repair": 1.634882,
+  "lock+rest": 1.776896,
+  "front-const": 1.822222,
+  "front-final": 1.913514,
+  "measurements": 2.111155,
+  "smoother-hand": 1.920854,
+  "output": 2.452225
+ },
+ "maxrss_raw": 37552,
+ "run_s": {
+  "min": 1.1174776670004576,
+  "median": 1.1409536410001238,
+  "all": [
+   1.1871260910002093,
+   1.1174776670004576,
+   1.1409536410001238,
+   1.1631631760001255,
+   1.123906691999764
+  ]
+ },
+ "ms_per_imu_second": {
+  "min": 7.754209415942921,
+  "median": 7.917109869358934
+ },
+ "stage_s": {
+  "parse+grid": 0.07020297200051573,
+  "repair": 0.012350494999736839,
+  "lock+rest": 0.021256944999549887,
+  "front-const": 0.17362957100067433,
+  "front-final": 0.17725509599949874,
+  "measurements": 0.0665186360001826,
+  "smoother-hand": 0.4763168899999073,
+  "output": 0.11916761300017242
+ },
+ "startup_s": {
+  "python_only": {
+   "min": 0.013448638999761897,
+   "median": 0.013966569999865897
+  },
+  "import_numpy": {
+   "min": 0.08123093300036999,
+   "median": 0.08217256600073597
+  },
+  "import_main": {
+   "min": 0.08320154899956833,
+   "median": 0.08778704500036838
+  },
+  "end_to_end": {
+   "min": 1.2284111300004952,
+   "median": 1.2770863449995886
+  }
+ },
+ "end_to_end_ms_per_imu_second": 8.86173858664138
+}

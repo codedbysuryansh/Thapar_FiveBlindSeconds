@@ -1,0 +1,158 @@
+[
+ {
+  "id": "DEV0-dev-identity-F",
+  "src": "../src/snapshots/main_dev_F.py",
+  "config": {},
+  "title": "main_dev.py (batch F build) with every flag off",
+  "hypothesis": "Flags off must reproduce the champion byte for byte",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X042f-rest-dragoff-loose-F",
+  "src": "../src/snapshots/main_dev_F.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1
+    }
+   }
+  },
+  "title": "Rest 50 %/0.06 + no drag rows at rest (records rh; = X042a on build F)",
+  "hypothesis": "Reference for the radius analysis",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X043-adapt-r1.3-p16b",
+  "src": "../src/snapshots/main_dev_F.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_adapt_r": 1.3,
+     "drag_tight": [
+      0.05,
+      300.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + tight drag prior (0.15/0.05/300) when rh >= 1.3 m",
+  "hypothesis": "Choose the drag-bias prior from the workspace size (guard radius rh): tight in large spaces, loose in confined rooms",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X043-adapt-r1.5-p16b",
+  "src": "../src/snapshots/main_dev_F.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_adapt_r": 1.5,
+     "drag_tight": [
+      0.05,
+      300.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + tight drag prior (0.15/0.05/300) when rh >= 1.5 m",
+  "hypothesis": "Choose the drag-bias prior from the workspace size (guard radius rh): tight in large spaces, loose in confined rooms",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X043-adapt-r1.7-p16b",
+  "src": "../src/snapshots/main_dev_F.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_adapt_r": 1.7,
+     "drag_tight": [
+      0.05,
+      300.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + tight drag prior (0.15/0.05/300) when rh >= 1.7 m",
+  "hypothesis": "Choose the drag-bias prior from the workspace size (guard radius rh): tight in large spaces, loose in confined rooms",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X043-adapt-r2-p16b",
+  "src": "../src/snapshots/main_dev_F.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_adapt_r": 2.0,
+     "drag_tight": [
+      0.05,
+      300.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + tight drag prior (0.15/0.05/300) when rh >= 2 m",
+  "hypothesis": "Choose the drag-bias prior from the workspace size (guard radius rh): tight in large spaces, loose in confined rooms",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X043-adapt-r1.5-p16a",
+  "src": "../src/snapshots/main_dev_F.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_adapt_r": 1.5,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + tighter drag prior (0.15/0.03/1000) when rh >= 1.5 m",
+  "hypothesis": "Choose the drag-bias prior from the workspace size (guard radius rh): tight in large spaces, loose in confined rooms",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X043-adapt-r1.7-p16a",
+  "src": "../src/snapshots/main_dev_F.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_adapt_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + tighter drag prior (0.15/0.03/1000) when rh >= 1.7 m",
+  "hypothesis": "Choose the drag-bias prior from the workspace size (guard radius rh): tight in large spaces, loose in confined rooms",
+  "parent": "CHAMP-1.0.0"
+ }
+]

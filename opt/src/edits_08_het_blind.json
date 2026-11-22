@@ -1,0 +1,20 @@
+[
+ ["           drag_adapt_r=None, drag_tight=(0.05, 300.0, 0.15))     # X043: drag-bias prior (sc, tauc, sc0) used when the guard radius >= drag_adapt_r",
+  "           drag_adapt_r=None, drag_tight=(0.05, 300.0, 0.15),     # X043: drag-bias prior (sc, tauc, sc0) used when the guard radius >= drag_adapt_r\n           het_acc=0, het_lo=0.2, het_hi=5.0, blind_tau_r=0.5)    # X005: local accelerometer noise per chunk; X030: rotor blind damping time"],
+ ["        ca = np.zeros(K, np.int8); cz = np.zeros(K, np.int8); ya = np.zeros((K, 3)); st2 = dict(s1=0.0, s2=0.0, nd=0, last=None)",
+  "        ca = np.zeros(K, np.int8); cz = np.zeros(K, np.int8); ya = np.zeros((K, 3)); st2 = dict(s1=0.0, s2=0.0, nd=0, last=None, loc=[])"],
+ ["                st2[\"s1\"] += float(dv.sum()); st2[\"s2\"] += float((dv * dv).sum()); st2[\"nd\"] += dv.size; st2[\"last\"] = av[-1:].copy()",
+  "                st2[\"s1\"] += float(dv.sum()); st2[\"s2\"] += float((dv * dv).sum()); st2[\"nd\"] += dv.size; st2[\"last\"] = av[-1:].copy()\n                if CFG[\"het_acc\"] and dv.size > 30: st2[\"loc\"].append((c0 + 0.5 * m, (float((dv * dv).mean()) - float(dv.mean()) ** 2) / 2.0))"],
+ ["        self.tabA = _bs_table(self.sn2, d); self.tabZ = _bs_table(SZ ** 2, d)    # block noise variances follow from the counts",
+  "        self.tabA = _bs_table(self.sn2, d); self.tabZ = _bs_table(SZ ** 2, d)    # block noise variances follow from the counts\n        self.ra = None\n        if CFG[\"het_acc\"] and len(st2[\"loc\"]) >= 2 and self.sn2 > 0:            # X005: per-block scale of the accelerometer variance\n            cs_ = np.array([x[0] for x in st2[\"loc\"]]); vs_ = np.array([x[1] for x in st2[\"loc\"]]) / self.sn2\n            self.ra = np.clip(np.interp(np.arange(K) * d + 0.5 * d, cs_, vs_), CFG[\"het_lo\"], CFG[\"het_hi\"]).astype(np.float32)"],
+ ["            if self.rot: tau = (sb - N0 + 1) / D.fs; p[bl] = self.pT + (0.5 * (1.0 - np.exp(-tau / 0.5)))[:, None] * self.vT",
+  "            if self.rot: tb_ = CFG[\"blind_tau_r\"]; tau = (sb - N0 + 1) / D.fs; p[bl] = self.pT + (tb_ * (1.0 - np.exp(-tau / tb_)))[:, None] * self.vT"],
+ ["    ya, ca, cz, bk, tA, tZ = M.ya, M.ca, M.cz, M.bk, M.tabA, M.tabZ; h = H4; hz = np.array([0, 1.0, 0, 0]); Hb = np.vstack([h, hz]); z3 = np.zeros(3)",
+  "    ya, ca, cz, bk, tA, tZ = M.ya, M.ca, M.cz, M.bk, M.tabA, M.tabZ; h = H4; hz = np.array([0, 1.0, 0, 0]); Hb = np.vstack([h, hz]); z3 = np.zeros(3); ra = M.ra"],
+ ["        if a_ and not z_:\n            PH = Pp @ h; g = PH / (h @ PH + R(tA, c_a));",
+  "        if a_ and not z_:\n            PH = Pp @ h; g = PH / (h @ PH + (R(tA, c_a) if ra is None else R(tA, c_a) * float(ra[k])));"],
+ ["            PH = Pp @ Hb.T; S = Hb @ PH; S[0, 0] += R(tA, c_a); S[1, 1] += R(tZ, c_z);",
+  "            PH = Pp @ Hb.T; S = Hb @ PH; S[0, 0] += R(tA, c_a) if ra is None else R(tA, c_a) * float(ra[k]); S[1, 1] += R(tZ, c_z);"],
+ ["        if c_a: z[:3] = ya[k]; r[:3] = R(tA, c_a)\n        else: Hk[:3] = 0.0\n        if c_d:\n            j = int(fidx[k]); Hk[rows3] = HV[j, 0]; Hk[rows4] = HV[j, 1]; Hk[3, 14:] = HL[j, 0]; Hk[4, 14:] = HL[j, 1]; z[3:5] = YD[j]; r[3:5] = R(tD, c_d)\n        else: Hk[3:5] = 0.0\n        if m == 8: r[5:] = R(tZ, c_z)\n        PH = Pp @ Hk.T;",
+  "        if c_a: z[:3] = ya[k]; r[:3] = R(tA, c_a) if M.ra is None else R(tA, c_a) * float(M.ra[k])\n        else: Hk[:3] = 0.0\n        if c_d:\n            j = int(fidx[k]); Hk[rows3] = HV[j, 0]; Hk[rows4] = HV[j, 1]; Hk[3, 14:] = HL[j, 0]; Hk[4, 14:] = HL[j, 1]; z[3:5] = YD[j]; r[3:5] = R(tD, c_d)\n        else: Hk[3:5] = 0.0\n        if m == 8: r[5:] = R(tZ, c_z)\n        PH = Pp @ Hk.T;"]
+]

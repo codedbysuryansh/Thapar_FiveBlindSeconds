@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Five Blind Seconds · live demo · Track 03 Path Finder</title>
+<meta name="description" content="Run the Five Blind Seconds IMU-only trajectory estimator (main.py v1.1.0) in your browser.">
+<style>
+  :root { --bg:#0A0E1A; --band:#0D1B3E; --card:#111A30; --line:#22304F; --cyan:#00B4D8; --teal:#00E5B0; --orange:#F59E0B; --text:#E8EDF5; --muted:#8A97B0; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font: 15px/1.5 "Segoe UI", Calibri, system-ui, -apple-system, sans-serif; }
+  header { background:var(--band); border-bottom:3px solid var(--cyan); padding:22px 28px 18px; }
+  header .tag { display:inline-block; background:#1565C0; color:#fff; font-weight:700; font-size:12px; padding:4px 12px; border-radius:6px; letter-spacing:.04em; }
+  header h1 { margin:10px 0 2px; font-size:32px; letter-spacing:-.01em; }
+  header p { margin:0; color:var(--muted); }
+  main { max-width:1180px; margin:0 auto; padding:22px 24px 40px; }
+  .card { background:var(--card); border-left:4px solid var(--cyan); padding:16px 18px; border-radius:4px; }
+  .controls { display:flex; flex-wrap:wrap; gap:14px; align-items:center; }
+  select, button, .file span { font:inherit; color:var(--text); background:var(--bg); border:1px solid var(--line); border-radius:6px; padding:8px 12px; }
+  button { background:var(--cyan); color:#05101f; border-color:var(--cyan); font-weight:700; cursor:pointer; }
+  button:disabled { opacity:.45; cursor:wait; }
+  .file input { display:none; }
+  .file span { cursor:pointer; display:inline-block; }
+  #status { margin-top:12px; color:var(--muted); min-height:24px; font-family: ui-monospace, Consolas, monospace; font-size:13px; }
+  #status.ok { color:var(--teal); } #status.err { color:#ff6b6b; }
+  .grid { display:grid; grid-template-columns: 1.15fr 1fr; gap:18px; margin-top:16px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } }
+  canvas { width:100%; background:var(--bg); border:1px solid var(--line); border-radius:4px; display:block; }
+  .kpis { display:grid; grid-template-columns: repeat(3, 1fr); gap:10px; margin-bottom:12px; }
+  .kpi { background:var(--bg); border:1px solid var(--line); border-radius:4px; padding:10px 12px; }
+  .kpi b { display:block; font-size:22px; color:#fff; }
+  .kpi span { color:var(--muted); font-size:12px; }
+  .kpi.hl b { color:var(--cyan); }
+  .legend { color:var(--muted); font-size:12px; margin:6px 0 0; }
+  .legend i { display:inline-block; width:18px; height:3px; vertical-align:middle; margin:0 6px 0 12px; }
+  a { color:var(--cyan); }
+  .btn { display:inline-block; margin-top:12px; background:var(--teal); color:#04140f; font-weight:700; padding:9px 14px; border-radius:6px; text-decoration:none; }
+  h2 { font-size:13px; letter-spacing:.18em; text-transform:uppercase; color:var(--cyan); margin:30px 0 10px; }
+  table { width:100%; border-collapse:collapse; font-size:14px; }
+  th, td { text-align:right; padding:8px 10px; border-bottom:1px solid var(--line); }
+  th:first-child, td:first-child { text-align:left; }
+  th { color:var(--muted); font-weight:600; font-size:12px; text-transform:uppercase; letter-spacing:.06em; }
+  td.us { color:#fff; font-weight:700; }
+  footer { color:var(--muted); font-size:12.5px; margin-top:28px; border-top:1px solid var(--line); padding-top:14px; }
+</style>
+</head>
+<body>
+<header>
+  <span class="tag">TRACK 03 · PATH FINDER · XR HACKATHON 2026</span>
+  <h1>Five Blind Seconds · live demo</h1>
+  <p>Team Thapar_FiveBlindSeconds · Thapar Institute of Engineering &amp; Technology, Patiala · <a href="https://github.com/codedbysuryansh/Thapar_FiveBlindSeconds">source code and deck</a></p>
+</header>
+<main>
+  <div class="card">
+    <div><b>Run our submitted <code>main.py</code> (v1.1.0) right here.</b> Python and NumPy run inside this page (WebAssembly): the same file, byte for byte, that we submitted. Nothing is uploaded anywhere.</div>
+    <div class="controls" style="margin-top:12px">
+      <label>Sample&nbsp;
+        <select id="sample">
+          <option value="room1">TUM-VI room1 (hand-held)</option>
+          <option value="room2">TUM-VI room2 (hand-held)</option>
+          <option value="room3">TUM-VI room3 (hand-held)</option>
+          <option value="room4">TUM-VI room4 (hand-held)</option>
+          <option value="room5">TUM-VI room5 (hand-held)</option>
+          <option value="room6">TUM-VI room6 (hand-held)</option>
+        </select>
+      </label>
+      <button id="runSample" disabled>Run on sample</button>
+      <label class="file"><input type="file" id="file" accept=".zip,.csv,.txt"><span id="fileBtn">…or drop in your own EuRoC-format IMU file (.zip / .csv)</span></label>
+    </div>
+    <div id="status">Loading Python and NumPy in your browser (first time: about 10–20 s)…</div>
+  </div>
+
+  <div class="grid">
+    <div>
+      <canvas id="top" width="900" height="760"></canvas>
+      <div class="legend"><i style="background:#4A5A7A"></i>ground truth (samples only, used only to score)<i style="background:#00B4D8"></i>our estimate<i style="background:#F59E0B"></i>the five blind seconds</div>
+    </div>
+    <div>
+      <div class="kpis">
+        <div class="kpi"><b id="kRows">–</b><span>poses written = IMU rows</span></div>
+        <div class="kpi"><b id="kTime">–</b><span>run time in this browser</span></div>
+        <div class="kpi"><b id="kPlat">–</b><span>platform detected</span></div>
+        <div class="kpi hl"><b id="kAte">–</b><span>ATE vs ground truth</span></div>
+        <div class="kpi"><b id="kStill">–</b><span>standing still (the floor)</span></div>
+        <div class="kpi hl"><b id="kBlind">–</b><span>blind 5 s, mean error</span></div>
+      </div>
+      <canvas id="ts" width="760" height="460"></canvas>
+      <div class="legend">x, y, z over time: dashed = ground truth, solid = ours, orange band = IMU dead</div>
+      <a id="dl" class="btn" download="estimated_trajectory.txt" hidden>Download estimated_trajectory.txt</a>
+    </div>
+  </div>
+
+  <h2>Scorecard · organisers' degradation of all 17 public sequences · 340 missions</h2>
+  <table>
+    <tr><th>Metric (Samsung's rubric)</th><th>EuRoC, ours</th><th>EuRoC, standing still</th><th>TUM-VI, ours</th><th>TUM-VI, standing still</th></tr>
+    <tr><td>Waypoints (30%)</td><td class="us">2.10 m</td><td>3.25 m</td><td class="us">0.34 m</td><td>1.11 m</td></tr>
+    <tr><td>Blind 5 s (20%)</td><td class="us">2.68 m</td><td>3.08 m</td><td class="us">0.59 m</td><td>0.61 m</td></tr>
+    <tr><td>Dropout, 1 s after each gap (10%)</td><td class="us">1.98 m</td><td>3.05 m</td><td class="us">0.39 m</td><td>1.03 m</td></tr>
+    <tr><td>ATE (RMSE)</td><td class="us">2.29 m</td><td>3.45 m</td><td class="us">0.42 m</td><td>1.08 m</td></tr>
+    <tr><td>RPE translation / rotation, per 1 s</td><td class="us">0.29 m / 1.8°</td><td>0.79 m / 18.1°</td><td class="us">0.16 m / 5.4°</td><td>0.87 m / 56.7°</td></tr>
+    <tr><td>Peak memory (20%) · runtime (20%)</td><td class="us" colspan="4" style="text-align:center">2.64 MB heap (budget 8 MB) · 5.0 ms per IMU-second on one thread (budget 20 ms)</td></tr>
+  </table>
+
+  <footer>
+    Samples: TUM VI dataset (D. Schubert et al., IROS 2018), licensed CC BY 4.0; IMU degraded with the organisers' <code>degrade_imu.py</code> (seed 42, order A); ground truth resampled to 20 Hz for scoring in this page.
+    The submission and its full evaluation: <a href="https://github.com/codedbysuryansh/Thapar_FiveBlindSeconds">github.com/codedbysuryansh/Thapar_FiveBlindSeconds</a>.
+  </footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/pyodide/v0.27.2/full/pyodide.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+const status = (msg, cls) => { const s = $("status"); s.textContent = msg; s.className = cls || ""; };
+let py = null, busy = false;
+
+const GLUE = `
+import sys, time, json, zipfile, io, numpy as np
+if '/demo' not in sys.path: sys.path.insert(0, '/demo')
+import main as fbs
+
+def _count_rows(path):
+    if zipfile.is_zipfile(path):
+        z = zipfile.ZipFile(path); names = [n for n in z.namelist() if n.lower().endswith('imu0/data.csv')] or [n for n in z.namelist() if n.lower().endswith('.csv')]
+        lines = io.TextIOWrapper(z.open(names[0]), encoding='utf-8', errors='replace')
+    else:
+        lines = open(path, encoding='utf-8', errors='replace')
+    return sum(1 for ln in lines if ln.strip() and ln.strip()[0].isdigit())
+
+def fbs_demo(inp, gt_path):
+    rows_in = _count_rows(inp)
+    t0 = time.perf_counter(); path, info = fbs.run(inp, '/tmp/estimated_trajectory.txt'); dt = time.perf_counter() - t0
+    ns, P = [], []
+    for ln in open(path):
+        s = ln.split()
+        if not s or s[0].startswith('#'): continue
+        a, _, b = s[0].partition('.'); ns.append(int(a) * 1000000000 + int((b + '000000000')[:9])); P.append([float(s[1]), float(s[2]), float(s[3])])
+    ns = np.array(ns, dtype=np.int64); P = np.array(P, float); t = (ns - ns[0]) * 1e-9; T = float(t[-1]); blind = t >= T - 5.0
+    out = dict(rows_in=int(rows_in), rows_out=int(len(ns)), seconds=float(dt), imu_seconds=T, rotor=bool(info.get('rotor')), fallback=str(info.get('fallback', '')))
+    A, G, ok = P, None, None
+    if gt_path:
+        g = np.loadtxt(gt_path, delimiter=',', skiprows=1); gt_t = g[:, 0]
+        ok = (t >= gt_t[0]) & (t <= gt_t[-1])
+        G = np.stack([np.interp(t, gt_t, g[:, i]) for i in (1, 2, 3)], 1)
+        me, mg = P[ok].mean(0), G[ok].mean(0); H = (P[ok] - me).T @ (G[ok] - mg)
+        U, S, Vt = np.linalg.svd(H); D = np.diag([1, 1, np.sign(np.linalg.det(Vt.T @ U.T))]); R = Vt.T @ D @ U.T
+        A = P @ R.T + (mg - R @ me); err = np.linalg.norm(A - G, axis=1)
+        still = np.linalg.norm(G - mg, axis=1)
+        out['ate'] = float(np.sqrt(np.mean(err[ok] ** 2))); out['ate_still'] = float(np.sqrt(np.mean(still[ok] ** 2)))
+        bb = ok & blind; out['blind'] = float(err[bb].mean()) if bb.any() else None
+    k = max(1, len(t) // 2500); idx = np.arange(0, len(t), k)
+    if idx[-1] != len(t) - 1: idx = np.append(idx, len(t) - 1)
+    out['t'] = t[idx].round(3).tolist(); out['est'] = A[idx].round(4).tolist(); out['blind_mask'] = blind[idx].astype(int).tolist()
+    out['gt'] = G[idx].round(4).tolist() if G is not None else None; out['gt_ok'] = ok[idx].astype(int).tolist() if ok is not None else None
+    out['text'] = open(path).read()
+    return json.dumps(out)
+`;
+
+async function boot() {
+  try {
+    py = await loadPyodide();
+    status("Loading NumPy…"); await py.loadPackage("numpy");
+    status("Loading main.py v1.1.0…");
+    const src = await (await fetch("demo/main.py")).text();
+    py.FS.mkdirTree("/demo"); py.FS.writeFile("/demo/main.py", src);
+    await py.runPythonAsync(GLUE);
+    status("Ready. Pick a sample and press Run, or drop in your own file.", "ok");
+    $("runSample").disabled = false;
+  } catch (e) { status("Could not start Python in this browser: " + e, "err"); }
+}
+
+async function runOn(bytes, ext, gtText, label) {
+  if (busy) return; busy = true; $("runSample").disabled = true; $("dl").hidden = true;
+  try {
+    status("Running main.py on " + label + "…");
+    await new Promise(r => setTimeout(r, 60));
+    try { py.FS.unlink("/tmp/estimated_trajectory.txt"); } catch (e) {}
+    const inp = "/tmp/input" + ext; py.FS.writeFile(inp, bytes);
+    let gtPath = "";
+    if (gtText) { py.FS.writeFile("/tmp/gt.csv", gtText); gtPath = "/tmp/gt.csv"; }
+    py.globals.set("_inp", inp); py.globals.set("_gt", gtPath || null);
+    const res = JSON.parse(await py.runPythonAsync("fbs_demo(_inp, _gt)"));
+    show(res, label);
+    status(`Done: ${res.rows_out.toLocaleString()} poses for ${res.rows_in.toLocaleString()} IMU rows (${res.imu_seconds.toFixed(0)} s of IMU) in ${res.seconds.toFixed(1)} s in this browser.`, "ok");
+  } catch (e) { status("Run failed: " + e, "err"); }
+  busy = false; $("runSample").disabled = false;
+}
+
+function show(r, label) {
+  $("kRows").textContent = (r.rows_out === r.rows_in ? "✓ " : "") + r.rows_out.toLocaleString();
+  $("kTime").textContent = r.seconds.toFixed(1) + " s";
+  $("kPlat").textContent = r.rotor ? "drone" : "hand-held";
+  $("kAte").textContent = r.ate != null ? r.ate.toFixed(2) + " m" : "no truth";
+  $("kStill").textContent = r.ate_still != null ? r.ate_still.toFixed(2) + " m" : "–";
+  $("kBlind").textContent = r.blind != null ? r.blind.toFixed(2) + " m" : "–";
+  const blob = new Blob([r.text], { type: "text/plain" }); const dl = $("dl"); dl.href = URL.createObjectURL(blob); dl.hidden = false;
+  animate(r);
+}
+
+function bounds(pts, ax) { let lo = Infinity, hi = -Infinity; for (const p of pts) { if (p) { lo = Math.min(lo, p[ax]); hi = Math.max(hi, p[ax]); } } return [lo, hi]; }
+
+function drawTop(r, frac) {
+  const c = $("top"), g = c.getContext("2d"), W = c.width, H = c.height, pad = 40;
+  g.fillStyle = "#0A0E1A"; g.fillRect(0, 0, W, H);
+  const all = r.est.concat(r.gt ? r.gt.filter((p, i) => r.gt_ok[i]) : []);
+  const [x0, x1] = bounds(all, 0), [y0, y1] = bounds(all, 1);
+  const s = Math.min((W - 2 * pad) / Math.max(x1 - x0, 1e-6), (H - 2 * pad) / Math.max(y1 - y0, 1e-6));
+  const ox = (W - s * (x1 - x0)) / 2, oy = (H - s * (y1 - y0)) / 2;
+  const X = (p) => ox + (p[0] - x0) * s, Y = (p) => H - (oy + (p[1] - y0) * s);
+  g.strokeStyle = "#18233D"; g.lineWidth = 1;
+  for (let k = 0; k <= 10; k++) { g.beginPath(); g.moveTo(pad / 2, pad / 2 + k * (H - pad) / 10); g.lineTo(W - pad / 2, pad / 2 + k * (H - pad) / 10); g.stroke(); }
+  if (r.gt) { g.strokeStyle = "#4A5A7A"; g.lineWidth = 1.6; g.beginPath(); let st = false;
+    r.gt.forEach((p, i) => { if (!r.gt_ok[i]) { st = false; return; } if (!st) { g.moveTo(X(p), Y(p)); st = true; } else g.lineTo(X(p), Y(p)); }); g.stroke(); }
+  const n = Math.max(2, Math.floor(frac * r.est.length));
+  g.lineWidth = 2.2; g.lineJoin = "round";
+  for (const blindPass of [0, 1]) {
+    g.strokeStyle = blindPass ? "#F59E0B" : "#00B4D8"; g.lineWidth = blindPass ? 4.5 : 2.2; g.beginPath(); let st = false;
+    for (let i = 0; i < n; i++) { const b = r.blind_mask[i]; if (b !== blindPass) { st = false; continue; } const p = r.est[i];
+      if (!st) { g.moveTo(X(p), Y(p)); st = true; } else g.lineTo(X(p), Y(p)); }
+    g.stroke();
+  }
+  const p = r.est[n - 1]; g.fillStyle = r.blind_mask[n - 1] ? "#F59E0B" : "#E8EDF5"; g.beginPath(); g.arc(X(p), Y(p), 6, 0, 7); g.fill();
+  g.fillStyle = "#8A97B0"; g.font = "22px Calibri, sans-serif"; g.fillText("top view (x, y) · 1 m = " + s.toFixed(0) + " px", 20, H - 14);
+}
+
+function drawTS(r, frac) {
+  const c = $("ts"), g = c.getContext("2d"), W = c.width, H = c.height, L = 46, Rr = 12;
+  g.fillStyle = "#0A0E1A"; g.fillRect(0, 0, W, H);
+  const T = r.t[r.t.length - 1], n = Math.max(2, Math.floor(frac * r.t.length)), lane = (H - 30) / 3;
+  const tb = r.t.findIndex((v, i) => r.blind_mask[i]); const xb = L + (r.t[tb] / T) * (W - L - Rr);
+  g.fillStyle = "rgba(245,158,11,0.28)"; g.fillRect(xb, 0, W - Rr - xb, H - 30);
+  ["x", "y", "z"].forEach((name, ax) => {
+    const top = ax * lane + 6, h = lane - 12;
+    const vals = r.est.map(p => p[ax]).concat(r.gt ? r.gt.filter((p, i) => r.gt_ok[i]).map(p => p[ax]) : []);
+    const lo = Math.min(...vals), hi = Math.max(...vals), sc = h / Math.max(hi - lo, 1e-6);
+    const XX = (t) => L + (t / T) * (W - L - Rr), YY = (v) => top + h - (v - lo) * sc;
+    g.fillStyle = "#8A97B0"; g.font = "20px Calibri, sans-serif"; g.fillText(name, 14, top + h / 2 + 7);
+    if (r.gt) { g.setLineDash([6, 5]); g.strokeStyle = "#7C8BA8"; g.lineWidth = 1.4; g.beginPath(); let st = false;
+      r.gt.forEach((p, i) => { if (!r.gt_ok[i]) { st = false; return; } if (!st) { g.moveTo(XX(r.t[i]), YY(p[ax])); st = true; } else g.lineTo(XX(r.t[i]), YY(p[ax])); }); g.stroke(); g.setLineDash([]); }
+    g.strokeStyle = "#00B4D8"; g.lineWidth = 1.8; g.beginPath();
+    for (let i = 0; i < n; i++) { const P = r.est[i]; if (i === 0) g.moveTo(XX(r.t[i]), YY(P[ax])); else g.lineTo(XX(r.t[i]), YY(P[ax])); }
+    g.stroke();
+  });
+  g.fillStyle = "#8A97B0"; g.font = "18px Calibri, sans-serif"; g.fillText("0 s", L, H - 8); g.fillText(T.toFixed(0) + " s", W - Rr - 50, H - 8);
+}
+
+function animate(r) {
+  const t0 = performance.now(), dur = 2600;
+  const step = (now) => { const f = Math.min(1, (now - t0) / dur); drawTop(r, f); drawTS(r, f); if (f < 1) requestAnimationFrame(step); };
+  requestAnimationFrame(step);
+}
+
+$("runSample").addEventListener("click", async () => {
+  const room = $("sample").value;
+  status("Downloading the " + room + " sample…");
+  const [zip, gt] = await Promise.all([fetch("demo/samples/" + room + "_A42.zip").then(r => r.arrayBuffer()), fetch("demo/samples/" + room + "_gt20.csv").then(r => r.text())]);
+  await runOn(new Uint8Array(zip), ".zip", gt, "TUM-VI " + room + " (degraded, seed 42)");
+});
+$("file").addEventListener("change", async (ev) => {
+  const f = ev.target.files[0]; if (!f || !py) return;
+  const ext = f.name.toLowerCase().endsWith(".zip") ? ".zip" : ".csv";
+  await runOn(new Uint8Array(await f.arrayBuffer()), ext, null, f.name);
+  ev.target.value = "";
+});
+boot();
+</script>
+</body>
+</html>

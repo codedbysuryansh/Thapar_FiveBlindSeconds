@@ -1,0 +1,86 @@
+[
+ {
+  "id": "ORACLE-k-champ",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "k_drag": {
+    "MH_01_easy": 0.18185813357413066,
+    "MH_02_easy": 0.18420352909988819,
+    "MH_03_medium": 0.19455260281774267,
+    "MH_04_difficult": 0.2122813980204592,
+    "MH_05_difficult": 0.20130547872117885,
+    "V1_01_easy": 0.18789887710347664,
+    "V1_02_medium": 0.18694253796390697,
+    "V1_03_difficult": 0.1644647025618498,
+    "V2_01_easy": 0.16621865226961258,
+    "V2_02_medium": 0.19842399911304787,
+    "V2_03_difficult": 0.1817155877371721,
+    "default": 0.18726
+   }
+  },
+  "title": "ORACLE: champion with each flight's own fitted k",
+  "hypothesis": "How much the leave-one-out k costs the champion",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "ORACLE-k-P16tight",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "k_drag": {
+    "MH_01_easy": 0.18185813357413066,
+    "MH_02_easy": 0.18420352909988819,
+    "MH_03_medium": 0.19455260281774267,
+    "MH_04_difficult": 0.2122813980204592,
+    "MH_05_difficult": 0.20130547872117885,
+    "V1_01_easy": 0.18789887710347664,
+    "V1_02_medium": 0.18694253796390697,
+    "V1_03_difficult": 0.1644647025618498,
+    "V2_01_easy": 0.16621865226961258,
+    "V2_02_medium": 0.19842399911304787,
+    "V2_03_difficult": 0.1817155877371721,
+    "default": 0.18726
+   },
+   "set": {
+    "SC0": 0.15,
+    "SC": 0.03,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "ORACLE: tight drag bias (0.15/0.03/1000) with each flight's own k",
+  "hypothesis": "If the V1 losses of the tight drag bias come from the k mismatch, they vanish with the flight's own k",
+  "parent": "P16-sc0_0.15-sc0.03-tauc1000"
+ },
+ {
+  "id": "ORACLE-k-combo2",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "k_drag": {
+    "MH_01_easy": 0.18185813357413066,
+    "MH_02_easy": 0.18420352909988819,
+    "MH_03_medium": 0.19455260281774267,
+    "MH_04_difficult": 0.2122813980204592,
+    "MH_05_difficult": 0.20130547872117885,
+    "V1_01_easy": 0.18789887710347664,
+    "V1_02_medium": 0.18694253796390697,
+    "V1_03_difficult": 0.1644647025618498,
+    "V2_01_easy": 0.16621865226961258,
+    "V2_02_medium": 0.19842399911304787,
+    "V2_03_difficult": 0.1817155877371721,
+    "default": 0.18726
+   },
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "tau_g_hand": 12.0
+    },
+    "SC0": 0.15,
+    "SC": 0.03,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "ORACLE: combination 2 with each flight's own k",
+  "hypothesis": "Upper bound of online k estimation on top of combination 2",
+  "parent": "X101-combo2"
+ }
+]

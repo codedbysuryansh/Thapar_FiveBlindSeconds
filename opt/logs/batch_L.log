@@ -1,0 +1,7 @@
+candidate DEV0-dev-identity-L created (main.py e34ed5f87488218c)
+DEV0-dev-identity-L                ALL  +0.00% [ +0.00, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 136 fail 0 dec 0 | ms 7.63->7.71
+candidate X110d-guard-revert created (main.py e34ed5f87488218c)
+X110d-guard-revert                 ALL  +0.00% [ +0.00, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 136 fail 0 dec 0 | ms 7.75->8.00
+T4 subset all, families E46,E55,E60: 935 cases
+X110d-guard-revert                 errors 0 fallbacks 0 | ATE   -4.4 % (hand   -0.2, rotor   -5.4) wp   -3.6 blind   -5.0 drop   -7.9 | worse>25 %: 8/833
+      worst: acc_ramp_1 +15%, ramp_r_0.01 +2%, ramp_x_0.01 +1%, rampwin_0.05_10s_persist +1%, gap_3x4 +1%

@@ -1,0 +1,636 @@
+[
+ {
+  "id": "P01a-sd_drag-0.8",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "SD_DRAG": 0.8
+   }
+  },
+  "title": "Drag-row noise SD_DRAG = 0.8 (champion 1.4)",
+  "hypothesis": "The drag rows are mis-weighted; a different per-sample noise changes velocity shrinkage",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P01b-sd_drag-1.1",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "SD_DRAG": 1.1
+   }
+  },
+  "title": "Drag-row noise SD_DRAG = 1.1 (champion 1.4)",
+  "hypothesis": "The drag rows are mis-weighted; a different per-sample noise changes velocity shrinkage",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P01c-sd_drag-1.8",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "SD_DRAG": 1.8
+   }
+  },
+  "title": "Drag-row noise SD_DRAG = 1.8 (champion 1.4)",
+  "hypothesis": "The drag rows are mis-weighted; a different per-sample noise changes velocity shrinkage",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P01d-sd_drag-2.5",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "SD_DRAG": 2.5
+   }
+  },
+  "title": "Drag-row noise SD_DRAG = 2.5 (champion 1.4)",
+  "hypothesis": "The drag rows are mis-weighted; a different per-sample noise changes velocity shrinkage",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P02a-rotor_sigma_a-0.6",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.3,
+     0.6,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior sigma_a = 0.6 (champion 1)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P02b-rotor_sigma_a-1.5",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.3,
+     1.5,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior sigma_a = 1.5 (champion 1)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P02c-rotor_sigma_a-2.2",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.3,
+     2.2,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior sigma_a = 2.2 (champion 1)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P03a-rotor_T_p-12",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     12.0,
+     2.0,
+     0.3,
+     1.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior T_p = 12 (champion 20)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P03b-rotor_T_p-30",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     30.0,
+     2.0,
+     0.3,
+     1.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior T_p = 30 (champion 20)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P03c-rotor_T_p-45",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     45.0,
+     2.0,
+     0.3,
+     1.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior T_p = 45 (champion 20)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P04a-rotor_tau_v-1",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     1.0,
+     0.3,
+     1.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior tau_v = 1 (champion 2)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P04b-rotor_tau_v-4",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     4.0,
+     0.3,
+     1.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior tau_v = 4 (champion 2)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P05a-rotor_tau_a-0.15",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.15,
+     1.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior tau_a = 0.15 (champion 0.3)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P05b-rotor_tau_a-0.6",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.6,
+     1.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior tau_a = 0.6 (champion 0.3)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P06a-rotor_sigma_b-0.05",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.3,
+     1.0,
+     20.0,
+     0.05
+    ]
+   }
+  },
+  "title": "Rotor prior sigma_b = 0.05 (champion 0.1)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P06b-rotor_sigma_b-0.2",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.3,
+     1.0,
+     20.0,
+     0.2
+    ]
+   }
+  },
+  "title": "Rotor prior sigma_b = 0.2 (champion 0.1)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P07a-rotor_tau_b-10",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.3,
+     1.0,
+     10.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior tau_b = 10 (champion 20)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P07b-rotor_tau_b-40",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "ROTOR": [
+     20.0,
+     2.0,
+     0.3,
+     1.0,
+     40.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Rotor prior tau_b = 40 (champion 20)",
+  "hypothesis": "Re-tuning the rotor motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P08a-tau_c-30",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "TAU_C": 30.0
+   }
+  },
+  "title": "Drag-bias prior TAU_C = 30",
+  "hypothesis": "The drag-row bias process is mis-specified",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P08b-tau_c-300",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "TAU_C": 300.0
+   }
+  },
+  "title": "Drag-bias prior TAU_C = 300",
+  "hypothesis": "The drag-row bias process is mis-specified",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P08c-sc-0.08",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "SC": 0.08
+   }
+  },
+  "title": "Drag-bias prior SC = 0.08",
+  "hypothesis": "The drag-row bias process is mis-specified",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P08d-sc-0.3",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "SC": 0.3
+   }
+  },
+  "title": "Drag-bias prior SC = 0.3",
+  "hypothesis": "The drag-row bias process is mis-specified",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P09a-matern_ell-0.6",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "MATERN": [
+     0.6,
+     2.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior ell = 0.6 (champion 1)",
+  "hypothesis": "Re-tuning the hand-held motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P09b-matern_ell-1.5",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "MATERN": [
+     1.5,
+     2.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior ell = 1.5 (champion 1)",
+  "hypothesis": "Re-tuning the hand-held motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P09c-matern_sigma_p-1",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "MATERN": [
+     1.0,
+     1.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior sigma_p = 1 (champion 2)",
+  "hypothesis": "Re-tuning the hand-held motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P09d-matern_sigma_p-3",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "MATERN": [
+     1.0,
+     3.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior sigma_p = 3 (champion 2)",
+  "hypothesis": "Re-tuning the hand-held motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P09e-matern_sigma_b-0.05",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "MATERN": [
+     1.0,
+     2.0,
+     20.0,
+     0.05
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior sigma_b = 0.05 (champion 0.1)",
+  "hypothesis": "Re-tuning the hand-held motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P09f-matern_sigma_b-0.2",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "MATERN": [
+     1.0,
+     2.0,
+     20.0,
+     0.2
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior sigma_b = 0.2 (champion 0.1)",
+  "hypothesis": "Re-tuning the hand-held motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P09g-matern_tau_b-10",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "MATERN": [
+     1.0,
+     2.0,
+     10.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior tau_b = 10 (champion 20)",
+  "hypothesis": "Re-tuning the hand-held motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P09h-matern_tau_b-40",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "MATERN": [
+     1.0,
+     2.0,
+     40.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior tau_b = 40 (champion 20)",
+  "hypothesis": "Re-tuning the hand-held motion prior at V5P4",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P10a-tau_g-2",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "TAU_G": 2.0
+   }
+  },
+  "title": "Gravity smoother TAU_G = 2 s (champion 3)",
+  "hypothesis": "Gravity tracking bandwidth trades bias-drift tracking against acceleration leakage",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P10b-tau_g-4.5",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "TAU_G": 4.5
+   }
+  },
+  "title": "Gravity smoother TAU_G = 4.5 s (champion 3)",
+  "hypothesis": "Gravity tracking bandwidth trades bias-drift tracking against acceleration leakage",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P10c-tau_g-6",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "TAU_G": 6.0
+   }
+  },
+  "title": "Gravity smoother TAU_G = 6 s (champion 3)",
+  "hypothesis": "Gravity tracking bandwidth trades bias-drift tracking against acceleration leakage",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P11a-k2-0.15",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "k2": 0.15
+    }
+   }
+  },
+  "title": "Gap rotation law k2 = 0.15 (champion 0.25)",
+  "hypothesis": "Gap rotation uncertainty mis-scaled",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P11b-k2-0.4",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "k2": 0.4
+    }
+   }
+  },
+  "title": "Gap rotation law k2 = 0.4 (champion 0.25)",
+  "hypothesis": "Gap rotation uncertainty mis-scaled",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P12a-bias_jump-0.25",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "BIAS_JUMP": 0.25
+   }
+  },
+  "title": "Accelerometer-bias jump at gaps = 0.25 (champion 0.5)",
+  "hypothesis": "Gap-scaled bias variance mis-scaled",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P12b-bias_jump-1",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "BIAS_JUMP": 1.0
+   }
+  },
+  "title": "Accelerometer-bias jump at gaps = 1 (champion 0.5)",
+  "hypothesis": "Gap-scaled bias variance mis-scaled",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P13a-sz-0.01",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "SZ": 0.01
+   }
+  },
+  "title": "Zero-velocity row noise SZ = 0.01 (champion 0.02)",
+  "hypothesis": "ZUPT weight",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P13b-sz-0.05",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "SZ": 0.05
+   }
+  },
+  "title": "Zero-velocity row noise SZ = 0.05 (champion 0.02)",
+  "hypothesis": "ZUPT weight",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P14a-lever-0.05",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "LEVER_PRIOR": 0.05
+   }
+  },
+  "title": "Lever-arm prior = 0.05 m (champion 0.15)",
+  "hypothesis": "Lever-arm prior width",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P14b-lever-0.3",
+  "src": "../../champion/v1.0.0/release/main.py",
+  "config": {
+   "set": {
+    "LEVER_PRIOR": 0.3
+   }
+  },
+  "title": "Lever-arm prior = 0.3 m (champion 0.15)",
+  "hypothesis": "Lever-arm prior width",
+  "parent": "CHAMP-1.0.0"
+ }
+]

@@ -1,0 +1,4 @@
+[
+ ["random-walk gravity smoother with a gap-length-squared rotation-uncertainty law on 12.5 Hz block means (time constant 3 s on the\nrotor path, 24 s on the hand-held path, where motion acceleration would otherwise leak into the tilt); thrust-lock platform gate;",
+  "random-walk gravity smoother with a gap-length-squared rotation-uncertainty law on 12.5 Hz block means (time constant 3 s; on the\nhand-held path the final attitude is recomputed with 24 s when the gyro bias is constant and the gyro is clean - residual constant\nbias <= 0.002 rad/s, sample noise <= 0.04 rad/s - so that motion acceleration does not leak into the tilt); thrust-lock platform gate;"]
+]

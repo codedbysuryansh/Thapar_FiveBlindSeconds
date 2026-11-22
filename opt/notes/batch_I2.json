@@ -1,0 +1,77 @@
+[
+ {
+  "id": "X108b-final24-safe-2e-3-0.04",
+  "src": "../src/snapshots/main_dev_I.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04
+    }
+   }
+  },
+  "title": "Final 24 s hand-held gravity if const mode, |mu| <= 0.002 rad/s, gyro noise <= 0.04 rad/s",
+  "hypothesis": "Use the long hand-held gravity only when the gyro is clean: constant bias mode, small residual constant bias |mu| and small gyro sample noise",
+  "parent": "X108a-final24-const-stats"
+ },
+ {
+  "id": "X108c-final24-safe-1.5e-3-0.035",
+  "src": "../src/snapshots/main_dev_I.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.0015,
+     "final_sw_max": 0.035
+    }
+   }
+  },
+  "title": "Final 24 s hand-held gravity if const mode, |mu| <= 0.0015, gyro noise <= 0.035",
+  "hypothesis": "Use the long hand-held gravity only when the gyro is clean: constant bias mode, small residual constant bias |mu| and small gyro sample noise",
+  "parent": "X108a-final24-const-stats"
+ },
+ {
+  "id": "X108d-final12-safe-2e-3-0.04",
+  "src": "../src/snapshots/main_dev_I.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 12.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04
+    }
+   }
+  },
+  "title": "Final 12 s hand-held gravity if const mode, |mu| <= 0.002, gyro noise <= 0.04",
+  "hypothesis": "Use the long hand-held gravity only when the gyro is clean: constant bias mode, small residual constant bias |mu| and small gyro sample noise",
+  "parent": "X108a-final24-const-stats"
+ }
+]

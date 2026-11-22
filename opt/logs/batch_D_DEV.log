@@ -1,0 +1,48 @@
+candidate P17-sc0_0.1-sc0.03-tauc1000 created (main.py b58236d7750b9d9f)
+P17-sc0_0.1-sc0.03-tauc1000        ALL  -7.49% [-14.91, +0.99] | EuRoC  -8.14% [-16.36, +1.73] | TUM  +0.00% [ +0.00, +0.00] | ate  -9.9/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.54
+candidate P17-sc0_0.2-sc0.03-tauc1000 created (main.py b58236d7750b9d9f)
+P17-sc0_0.2-sc0.03-tauc1000        ALL  -7.48% [-15.09, +1.05] | EuRoC  -8.12% [-16.51, +1.75] | TUM  +0.00% [ +0.00, +0.00] | ate -10.3/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.68
+candidate P17-sc0_0.3-sc0.03-tauc1000 created (main.py b58236d7750b9d9f)
+P17-sc0_0.3-sc0.03-tauc1000        ALL  -7.49% [-15.13, +1.07] | EuRoC  -8.13% [-16.54, +1.75] | TUM  +0.00% [ +0.00, +0.00] | ate -10.4/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.74
+candidate P17-sc0_0.15-sc0.02-tauc1000 created (main.py b58236d7750b9d9f)
+P17-sc0_0.15-sc0.02-tauc1000       ALL  -7.42% [-14.95, +1.21] | EuRoC  -8.06% [-16.37, +1.99] | TUM  +0.00% [ +0.00, +0.00] | ate -10.3/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.73
+candidate P17-sc0_0.15-sc0.01-tauc1000 created (main.py b58236d7750b9d9f)
+P17-sc0_0.15-sc0.01-tauc1000       ALL  -7.37% [-14.91, +1.32] | EuRoC  -8.00% [-16.31, +2.15] | TUM  +0.00% [ +0.00, +0.00] | ate -10.4/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.50
+candidate P17-sc0_0.15-sc0.05-tauc3000 created (main.py b58236d7750b9d9f)
+P17-sc0_0.15-sc0.05-tauc3000       ALL  -7.45% [-15.18, +1.23] | EuRoC  -8.10% [-16.57, +1.96] | TUM  +0.00% [ +0.00, +0.00] | ate  -9.9/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.63
+candidate P17-sc0_0.15-sc0.03-tauc300 created (main.py b58236d7750b9d9f)
+P17-sc0_0.15-sc0.03-tauc300        ALL  -6.65% [-14.35, +1.70] | EuRoC  -7.21% [-15.64, +2.32] | TUM  +0.00% [ +0.00, +0.00] | ate  -9.7/ +0.0 | ident 48 fail 0 dec 1 | ms 7.49->7.62
+candidate P17-sc0_0.15-sc0.02-tauc3000 created (main.py b58236d7750b9d9f)
+P17-sc0_0.15-sc0.02-tauc3000       ALL  -7.42% [-15.11, +1.42] | EuRoC  -8.06% [-16.53, +2.24] | TUM  +0.00% [ +0.00, +0.00] | ate -10.1/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.65
+candidate P17-sc0.02-tauc1000 created (main.py b58236d7750b9d9f)
+P17-sc0.02-tauc1000                ALL  -3.92% [-10.06, +4.86] | EuRoC  -4.27% [-11.08, +6.13] | TUM  +0.00% [ +0.00, +0.00] | ate  -2.5/ +0.0 | ident 48 fail 0 dec 5 | ms 7.49->7.73
+candidate P17-sc0.03-tauc1000 created (main.py b58236d7750b9d9f)
+P17-sc0.03-tauc1000                ALL  -8.55% [-14.42, +0.05] | EuRoC  -9.38% [-15.75, +0.60] | TUM  +0.00% [ +0.00, +0.00] | ate  -6.2/ +0.0 | ident 48 fail 0 dec 1 | ms 7.49->7.76
+candidate P17-sc0.02-tauc300 created (main.py b58236d7750b9d9f)
+P17-sc0.02-tauc300                 ALL  -3.51% [-10.08, +5.49] | EuRoC  -3.83% [-10.97, +6.59] | TUM  +0.00% [ +0.00, +0.00] | ate  -2.0/ +0.0 | ident 48 fail 0 dec 5 | ms 7.49->7.61
+candidate X041i-rest50-g0.08 created (main.py b58236d7750b9d9f)
+X041i-rest50-g0.08                 ALL  -1.44% [ -3.63, +1.00] | EuRoC  -1.60% [ -3.97, +1.12] | TUM  +0.00% [ +0.00, +0.00] | ate  -1.4/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.75
+candidate X041i-rest50-g0.1 created (main.py b58236d7750b9d9f)
+X041i-rest50-g0.1                  ALL  +0.36% [ -2.90, +4.93] | EuRoC  +0.36% [ -3.16, +5.53] | TUM  +0.00% [ +0.00, +0.00] | ate  +1.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.84
+candidate X041j-rest80-g06 created (main.py b58236d7750b9d9f)
+X041j-rest80-g06                   ALL  -2.10% [ -3.83, -0.38] | EuRoC  -2.31% [ -4.21, -0.39] | TUM  +0.00% [ +0.00, +0.00] | ate  -2.7/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.66
+candidate X002-taug_hand-16 created (main.py b58236d7750b9d9f)
+X002-taug_hand-16                  ALL  -0.74% [ -1.70, -0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -9.14% [-14.52, -0.17] | ate  +0.0/ -8.9 | ident 88 fail 0 dec 0 | ms 7.49->7.71
+candidate X002-taug_hand-24 created (main.py b58236d7750b9d9f)
+X002-taug_hand-24                  ALL  -0.75% [ -1.74, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -9.31% [-14.83, -0.17] | ate  +0.0/ -9.1 | ident 88 fail 0 dec 0 | ms 7.49->7.49
+candidate X002-taug_hand-40 created (main.py b58236d7750b9d9f)
+X002-taug_hand-40                  ALL  -0.75% [ -1.76, +0.01] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -9.34% [-14.84, -0.16] | ate  +0.0/ -9.1 | ident 88 fail 0 dec 0 | ms 7.49->7.52
+candidate X003-taug_hand-12-acccomp1 created (main.py b58236d7750b9d9f)
+X003-taug_hand-12-acccomp1         ALL  -0.78% [ -1.78, -0.03] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -9.55% [-15.10, -0.38] | ate  +0.0/ -9.0 | ident 88 fail 0 dec 0 | ms 7.49->8.16
+candidate X003-taug_hand-24-acccomp1 created (main.py b58236d7750b9d9f)
+X003-taug_hand-24-acccomp1         ALL  -0.80% [ -1.85, -0.02] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -9.80% [-15.49, -0.34] | ate  +0.0/ -9.3 | ident 88 fail 0 dec 0 | ms 7.49->8.06
+candidate X004-taug_rotor-4.5-dragP16 created (main.py b58236d7750b9d9f)
+X004-taug_rotor-4.5-dragP16        ALL  -6.65% [-13.61, +0.73] | EuRoC  -7.24% [-14.96, +1.29] | TUM  +0.00% [ +0.00, +0.00] | ate  -9.1/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.23
+candidate X004-taug_rotor-6-dragP16 created (main.py b58236d7750b9d9f)
+X004-taug_rotor-6-dragP16          ALL  -5.81% [-12.84, +1.97] | EuRoC  -6.31% [-13.99, +2.53] | TUM  +0.00% [ +0.00, +0.00] | ate  -8.4/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.25
+candidate X101-combo2 created (main.py b58236d7750b9d9f)
+X101-combo2                        ALL -12.68% [-20.55, -3.19] | EuRoC -13.05% [-21.65, -2.02] | TUM  -8.96% [-14.20, -0.10] | ate -15.5/ -8.7 | ident 0 fail 0 dec 0 | ms 7.49->7.62
+candidate X102-combo3 created (main.py b58236d7750b9d9f)
+X102-combo3                        ALL -12.74% [-20.63, -3.28] | EuRoC -13.05% [-21.65, -2.02] | TUM  -9.55% [-15.10, -0.38] | ate -15.5/ -9.0 | ident 0 fail 0 dec 0 | ms 7.49->8.04
+candidate X103-combo4 created (main.py b58236d7750b9d9f)
+X103-combo4                        ALL -13.69% [-20.55, -4.31] | EuRoC -14.23% [-21.71, -3.34] | TUM  -8.96% [-14.20, -0.10] | ate -11.8/ -8.7 | ident 0 fail 0 dec 0 | ms 7.49->7.80

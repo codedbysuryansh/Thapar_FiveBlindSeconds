@@ -1,0 +1,6 @@
+[
+ ["           acc_comp=0, acc_comp_hand=1, acc_comp_rotor=0, acc_comp_gain=1.0)",
+  "           acc_comp=0, acc_comp_hand=1, acc_comp_rotor=0, acc_comp_gain=1.0, drag_off_rest=0)"],
+ ["            zb, e1, e2 = _thrust_frame(acc[\"z\"] / nv); self.e = (e1, e2); md = v & fl[:N0]; del fl; cd = np.zeros(K, np.int8)",
+  "            zb, e1, e2 = _thrust_frame(acc[\"z\"] / nv); self.e = (e1, e2); md = v & fl[:N0]; del fl; cd = np.zeros(K, np.int8)\n            if CFG[\"drag_off_rest\"]: md &= ~D.zmask(0, N0)                 # no drag rows where the platform is detected at rest"]
+]

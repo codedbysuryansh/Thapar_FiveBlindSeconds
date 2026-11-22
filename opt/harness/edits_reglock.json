@@ -1,0 +1,12 @@
+[
+ ["def load_reg():\n    f = os.path.join(OPT, \"registry.json\")",
+  "import contextlib, fcntl\n@contextlib.contextmanager\ndef reg_txn():\n    \"\"\"Exclusive read-modify-write of registry.json (several harness processes may run at once).\"\"\"\n    with open(os.path.join(OPT, \"registry.lock\"), \"w\") as lk:\n        fcntl.flock(lk, fcntl.LOCK_EX)\n        try:\n            reg = load_reg(); yield reg; save_reg(reg)\n        finally: fcntl.flock(lk, fcntl.LOCK_UN)\ndef load_reg():\n    f = os.path.join(OPT, \"registry.json\")"],
+ ["    reg = load_reg(); reg[\"candidates\"][a.id] = dict(meta, status=\"pending\", reason=\"\", results={}); save_reg(reg); print(",
+  "    with reg_txn() as reg: reg[\"candidates\"][a.id] = dict(meta, status=\"pending\", reason=\"\", results={})\n    print("],
+ ["    reg = load_reg(); e = reg[\"candidates\"].setdefault(a.id, dict(status=\"pending\", results={}))\n    G = rep[\"groups\"]; e.setdefault(\"results\", {})[\"%s_vs_%s\" % (a.set, a.ref)] = dict(",
+  "    G = rep[\"groups\"]\n    with reg_txn() as reg:\n      e = reg[\"candidates\"].setdefault(a.id, dict(status=\"pending\", results={}))\n      e.setdefault(\"results\", {})[\"%s_vs_%s\" % (a.set, a.ref)] = dict("],
+ ["                    b_abs=G[gn][\"b_abs\"][\"rel\"], drop=G[gn][\"drop\"][\"rel\"], ms=(G[gn][\"ms_per_imu_s\"][\"ref\"], G[gn][\"ms_per_imu_s\"][\"cand\"])) for gn in G})\n    save_reg(reg)",
+  "                    b_abs=G[gn][\"b_abs\"][\"rel\"], drop=G[gn][\"drop\"][\"rel\"], ms=(G[gn][\"ms_per_imu_s\"][\"ref\"], G[gn][\"ms_per_imu_s\"][\"cand\"])) for gn in G})"],
+ ["    reg = load_reg(); e = reg[\"candidates\"][a.id]; e[\"status\"] = a.status; e[\"reason\"] = a.reason; e[\"decided\"] = datetime.datetime.now().isoformat(timespec=\"seconds\"); save_reg(reg)",
+  "    with reg_txn() as reg: e = reg[\"candidates\"][a.id]; e[\"status\"] = a.status; e[\"reason\"] = a.reason; e[\"decided\"] = datetime.datetime.now().isoformat(timespec=\"seconds\")"]
+]

@@ -1,0 +1,33 @@
+[
+ {
+  "id": "DEV0-dev-identity-I",
+  "src": "../src/snapshots/main_dev_I.py",
+  "config": {},
+  "title": "main_dev.py (batch I build) with every flag off",
+  "hypothesis": "Flags off must reproduce the champion byte for byte",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X108a-final24-const-stats",
+  "src": "../src/snapshots/main_dev_I.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0
+    }
+   }
+  },
+  "title": "= X107a on build I (records |mu| and the gyro sample noise)",
+  "hypothesis": "Statistics for the X046 safety thresholds",
+  "parent": "X107a-final24-const"
+ }
+]

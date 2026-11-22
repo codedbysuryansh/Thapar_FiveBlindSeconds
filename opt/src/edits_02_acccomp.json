@@ -1,0 +1,18 @@
+[
+ ["           rest_win=0.5, rest_frac=0.05, rest_gate=0.035, rest_minw=3)    # Phase 5 development flags (defaults = v1.0.0)",
+  "           rest_win=0.5, rest_frac=0.05, rest_gate=0.035, rest_minw=3,    # Phase 5 development flags (defaults = v1.0.0)\n           acc_comp=0, acc_comp_hand=1, acc_comp_rotor=0, acc_comp_gain=1.0)"],
+ ["    def attitude(self, bias, ii=False, rf=False, gn=False, aq=True):",
+  "    def attitude(self, bias, ii=False, rf=False, gn=False, aq=True, sub=None):"],
+ ["        xs /= np.maximum(gsm.cnt, 1)[:, None]; sb = gsm.smooth(xs, 1.5, inplace=True); att = Att(self, bias, carries, sb); out = {}",
+  "        xs /= np.maximum(gsm.cnt, 1)[:, None]\n        if sub is not None: xs -= sub                                   # X001: motion acceleration removed before the gravity smoother\n        sb = gsm.smooth(xs, 1.5, inplace=True); att = Att(self, bias, carries, sb); out = {}"],
+ ["        D.A = None                                                      # accelerometer done (reloaded only if the guard fires)",
+  "        if not getattr(D, \"keepA\", False): D.A = None                 # accelerometer done (reloaded only if the guard fires)"],
+ ["    F.gs.cache = {}; F.gs.cnt = F.gs.okb = F.gs.jblk = F.gs.jth = None; _CO.clear(); Mz = Meas(D, F, att, CFG[\"dec_rotor\"] if rotor else CFG[\"dec_hand\"], rotor, k_drag); D.A = None; _mark(\"measurements\"); guard = False; t = D.t",
+  "    AC = CFG[\"acc_comp\"] > 0; D.keepA = AC\n    if not AC: F.gs.cache = {}; F.gs.cnt = F.gs.okb = F.gs.jblk = F.gs.jth = None\n    _CO.clear(); Mz = Meas(D, F, att, CFG[\"dec_rotor\"] if rotor else CFG[\"dec_hand\"], rotor, k_drag)\n    if not AC: D.A = None\n    _mark(\"measurements\"); guard = False; t = D.t"],
+ ["        if rr > CFG[\"guard\"] * max(rh, 1e-6): guard = True; del pk, vk; Mz = Meas(D, F, att, CFG[\"dec_hand\"], False, k_drag); D.A = None",
+  "        if rr > CFG[\"guard\"] * max(rh, 1e-6):\n            guard = True; del pk, vk; Mz = Meas(D, F, att, CFG[\"dec_hand\"], False, k_drag)\n            if not AC: D.A = None"],
+ ["    if TRACE is None: Mz = None\n    _CO.clear()",
+  "    is_r0 = rotor and not guard\n    if AC and (CFG[\"acc_comp_rotor\"] if is_r0 else CFG[\"acc_comp_hand\"]):          # X001: acceleration-compensated gravity\n        for _it in range(int(CFG[\"acc_comp\"])):\n            sub = accel_sub(F, att, bt, pk, vk, CFG[\"acc_comp_gain\"]); del pk, vk\n            att, _o = F.attitude(bias, sub=sub); del sub, _o\n            Mz = Meas(D, F, att, CFG[\"dec_rotor\"] if is_r0 else CFG[\"dec_hand\"], is_r0, k_drag)\n            if is_r0: pk, vk = smooth_rotor(Mz)\n            else: pk, vk = smooth_hand(Mz, inplace=True)\n            bt = Mz.bt\n        _mark(\"acc-comp\")\n    if AC: F.gs.cache = {}; F.gs.cnt = F.gs.okb = F.gs.jblk = F.gs.jth = None; D.A = None\n    if TRACE is None: Mz = None\n    _CO.clear()"],
+ ["class Solution:\n",
+  "def accel_sub(F, att, bt, pk, vk, gain):\n    \"\"\"X001: the smoother's world acceleration (derivative of the block velocity) at the gravity-smoother block centres, rotated\n    into the gyro-integrated frame by the inverse tilt correction of the current gravity solution.\"\"\"\n    gsm = F.gs; tk = bt.get(0, bt.K); a = np.gradient(vk, tk, axis=0); tq = gsm.tb\n    aW = np.stack([np.interp(tq, tk, a[:, j]) for j in range(3)], 1); del a\n    g = att.sb / np.linalg.norm(att.sb, axis=1, keepdims=True); qc = shortest_arc(g, np.broadcast_to(EZ, g.shape))\n    return gain * qrot(qinv(qc), aW)\nclass Solution:\n"]
+]

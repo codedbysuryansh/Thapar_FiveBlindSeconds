@@ -1,0 +1,241 @@
+[
+ {
+  "id": "DEV0-dev-identity-G",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {},
+  "title": "main_dev.py (batch G build) with every flag off",
+  "hypothesis": "Flags off must reproduce the champion byte for byte",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X044-switch-r1.6-p16a",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.6,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + re-smooth with drag prior 0.15/0.03/1000 when radius >= 1.6 m",
+  "hypothesis": "an09: re-smoothing with the tight drag prior only when the loose rotor solution's radius is >= ~1.7 m keeps the MH gain (-18.7 %) without the V1 loss (+0.5 % instead of +8.9 %)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X044-switch-r1.7-p16a",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + re-smooth with drag prior 0.15/0.03/1000 when radius >= 1.7 m",
+  "hypothesis": "an09: re-smoothing with the tight drag prior only when the loose rotor solution's radius is >= ~1.7 m keeps the MH gain (-18.7 %) without the V1 loss (+0.5 % instead of +8.9 %)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X044-switch-r1.8-p16a",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.8,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + re-smooth with drag prior 0.15/0.03/1000 when radius >= 1.8 m",
+  "hypothesis": "an09: re-smoothing with the tight drag prior only when the loose rotor solution's radius is >= ~1.7 m keeps the MH gain (-18.7 %) without the V1 loss (+0.5 % instead of +8.9 %)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X044-switch-r1.7-p16b",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.05,
+      300.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + re-smooth with drag prior 0.15/0.05/300 when radius >= 1.7 m",
+  "hypothesis": "an09: re-smoothing with the tight drag prior only when the loose rotor solution's radius is >= ~1.7 m keeps the MH gain (-18.7 %) without the V1 loss (+0.5 % instead of +8.9 %)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X005a-hetacc",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "het_acc": 1
+    }
+   }
+  },
+  "title": "Heteroscedastic accelerometer rows (per-chunk high-frequency variance, clipped 0.2-5 x global)",
+  "hypothesis": "The degradation's white noise grows with time (sev^1.7 ramp); a per-chunk accelerometer variance from the data instead of one global value weights early and late rows correctly",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X005b-hetacc-narrow",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "het_acc": 1,
+     "het_lo": 0.5,
+     "het_hi": 2.0
+    }
+   }
+  },
+  "title": "Heteroscedastic accelerometer rows, clipped 0.5-2 x global",
+  "hypothesis": "The degradation's white noise grows with time (sev^1.7 ramp); a per-chunk accelerometer variance from the data instead of one global value weights early and late rows correctly",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X030-blindtau-0.3",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "blind_tau_r": 0.3
+    }
+   }
+  },
+  "title": "Rotor blind-window damping time 0.3 s (champion 0.5)",
+  "hypothesis": "Rotor blind window: damped velocity with time constant 0.5 s; with better velocity estimates a longer or shorter constant may be better",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X030-blindtau-0.8",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "blind_tau_r": 0.8
+    }
+   }
+  },
+  "title": "Rotor blind-window damping time 0.8 s (champion 0.5)",
+  "hypothesis": "Rotor blind window: damped velocity with time constant 0.5 s; with better velocity estimates a longer or shorter constant may be better",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X030-blindtau-1.2",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "blind_tau_r": 1.2
+    }
+   }
+  },
+  "title": "Rotor blind-window damping time 1.2 s (champion 0.5)",
+  "hypothesis": "Rotor blind window: damped velocity with time constant 0.5 s; with better velocity estimates a longer or shorter constant may be better",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X104-combo5",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_hand": 24.0
+    }
+   }
+  },
+  "title": "Combination 5: rest + no drag at rest + switched drag prior (r 1.7, 0.15/0.03/1000) + hand-held tau_g 24",
+  "hypothesis": "Combination of the screened directions: rotor rest/ground handling + radius-switched drag prior; hand-held long gravity time constant (+ acceleration compensation)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X105-combo6",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_hand": 24.0,
+     "acc_comp": 1
+    }
+   }
+  },
+  "title": "Combination 6: combination 5 + one acceleration-compensated gravity pass (hand-held)",
+  "hypothesis": "Combination of the screened directions: rotor rest/ground handling + radius-switched drag prior; hand-held long gravity time constant (+ acceleration compensation)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X106-combo7",
+  "src": "../src/snapshots/main_dev_G.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_hand": 24.0,
+     "het_acc": 1
+    }
+   }
+  },
+  "title": "Combination 7: combination 5 + heteroscedastic accelerometer rows",
+  "hypothesis": "Combination of the screened directions: rotor rest/ground handling + radius-switched drag prior; hand-held long gravity time constant (+ acceleration compensation)",
+  "parent": "CHAMP-1.0.0"
+ }
+]

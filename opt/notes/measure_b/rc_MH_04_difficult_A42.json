@@ -1,0 +1,77 @@
+{
+ "input": "~/SamsungPRISM_FiveBlindSeconds/data/phase4/inputs/MH_04_difficult_A42.zip",
+ "rows": 19753,
+ "imu_seconds": 101.60000000000001,
+ "machine": {
+  "platform": "macOS-27.2.1-arm64-arm-64bit",
+  "machine": "arm64",
+  "python": "3.12.7",
+  "processor": "arm",
+  "numpy": "2.5.4",
+  "cpu": "Apple M3 Pro"
+ },
+ "heap_MB": {
+  "after_imports": 1.715137,
+  "after_numpy": 2.215623,
+  "whole_program": 9.692158,
+  "interpreter": 11.49906
+ },
+ "stage_heap_MB": {
+  "start": 0.071175,
+  "parse+grid": 1.354766,
+  "repair": 1.357188,
+  "lock+rest": 1.496893,
+  "front-const": 1.366919,
+  "front-final": 1.715137,
+  "measurements": 1.702531,
+  "guard-hand": 1.606939,
+  "smoother-rotor": 1.705595,
+  "output": 1.614839
+ },
+ "maxrss_raw": 32374784,
+ "run_s": {
+  "min": 0.5581802090164274,
+  "median": 0.561916625010781,
+  "all": [
+   0.5611200840212405,
+   0.5683187920367345,
+   0.562543292006012,
+   0.561916625010781,
+   0.5581802090164274
+  ]
+ },
+ "ms_per_imu_second": {
+  "min": 5.493899695043576,
+  "median": 5.530675443019497
+ },
+ "stage_s": {
+  "parse+grid": 0.029373084020335227,
+  "repair": 0.007246374967508018,
+  "lock+rest": 0.008066625043284148,
+  "front-const": 0.020659790956415236,
+  "front-final": 0.11056104203453287,
+  "measurements": 0.036662957980297506,
+  "guard-hand": 0.05537062499206513,
+  "smoother-rotor": 0.2468953340430744,
+  "output": 0.042858249973505735
+ },
+ "startup_s": {
+  "python_only": {
+   "min": 0.015453875006642193,
+   "median": 0.015530999982729554
+  },
+  "import_numpy": {
+   "min": 0.04972158302552998,
+   "median": 0.050410083029419184
+  },
+  "import_main": {
+   "min": 0.05209666601149365,
+   "median": 0.05273412499809638
+  },
+  "end_to_end": {
+   "min": 0.624196375021711,
+   "median": 0.6270347919780761
+  }
+ },
+ "end_to_end_ms_per_imu_second": 6.17160228324878
+}

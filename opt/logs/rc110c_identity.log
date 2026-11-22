@@ -1,0 +1,185 @@
+RC-1.1.0c vs X110d-guard-revert on DEV
+missions 136, byte-identical outputs 136, new failures 0 [], decision changes 0 []
+  [EuRoC] composite +0.00 % [+0.00, +0.00]   points 17.170 -> 17.170 (+0.000 [+0.000, +0.000])   ms/IMU-s 8.50 -> 11.59
+      ate       2.2695 ->   2.2695   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        2.0933 ->   2.0933   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     2.5988 ->   2.5988   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      2.0549 ->   2.0549   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3295 ->   0.3295   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2850 ->   0.2850   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     2.2086 ->   2.2086   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.4968 ->   0.4968   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    3.4231 ->   3.4231   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      44.5277 ->  44.5277   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [TUM-VI] composite +0.00 % [+0.00, +0.00]   points 28.188 -> 28.188 (+0.000 [+0.000, +0.000])   ms/IMU-s 7.11 -> 10.78
+      ate       0.4178 ->   0.4178   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        0.3354 ->   0.3354   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     0.5827 ->   0.5827   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      0.3870 ->   0.3870   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3827 ->   0.3827   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.1501 ->   0.1501   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     0.4106 ->   0.4106   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.0723 ->   0.0723   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    0.6527 ->   0.6527   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori       7.7860 ->   7.7860   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [ALL] composite +0.00 % [+0.00, +0.00]   points 21.059 -> 21.059 (+0.000 [+0.000, +0.000])   ms/IMU-s 8.00 -> 11.24
+      ate       1.6159 ->   1.6159   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        1.4729 ->   1.4729   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     1.8872 ->   1.8872   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      1.4662 ->   1.4662   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3483 ->   0.3483   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2374 ->   0.2374   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     1.5741 ->   1.5741   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.3470 ->   0.3470   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    2.4453 ->   2.4453   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      31.5601 ->  31.5601   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  best missions (composite %%): MH_01_easy_A1001 +0.0, MH_01_easy_A1002 +0.0, MH_01_easy_A1003 +0.0, MH_01_easy_A1004 +0.0, MH_01_easy_B1001 +0.0, MH_01_easy_B1002 +0.0
+  worst missions (composite %%): room6_B1004 +0.0, room6_B1003 +0.0, room6_B1002 +0.0, room6_B1001 +0.0, room6_A1004 +0.0, room6_A1003 +0.0
+RC-1.1.0c vs X108b-final24-safe-2e-3-0.04 on S42
+missions 34, byte-identical outputs 34, new failures 0 [], decision changes 0 []
+  [EuRoC] composite +0.00 % [+0.00, +0.00]   points 16.016 -> 16.016 (+0.000 [+0.000, +0.000])   ms/IMU-s 15.48 -> 11.94
+      ate       2.3630 ->   2.3630   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        2.1713 ->   2.1713   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     2.7602 ->   2.7602   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      2.0971 ->   2.0971   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3404 ->   0.3404   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.3014 ->   0.3014   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     2.2994 ->   2.2994   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.5249 ->   0.5249   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    3.7783 ->   3.7783   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      46.3610 ->  46.3610   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [TUM-VI] composite +0.00 % [+0.00, +0.00]   points 27.119 -> 27.119 (+0.000 [+0.000, +0.000])   ms/IMU-s 13.89 -> 10.64
+      ate       0.4109 ->   0.4109   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        0.3425 ->   0.3425   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     0.6020 ->   0.6020   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      0.3863 ->   0.3863   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3941 ->   0.3941   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.1511 ->   0.1511   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     0.4039 ->   0.4039   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.0700 ->   0.0700   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    0.6682 ->   0.6682   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori       7.2999 ->   7.2999   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [ALL] composite +0.00 % [+0.00, +0.00]   points 19.935 -> 19.935 (+0.000 [+0.000, +0.000])   ms/IMU-s 14.94 -> 11.63
+      ate       1.6740 ->   1.6740   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        1.5259 ->   1.5259   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     1.9985 ->   1.9985   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      1.4932 ->   1.4932   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3594 ->   0.3594   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2484 ->   0.2484   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     1.6304 ->   1.6304   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.3643 ->   0.3643   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    2.6806 ->   2.6806   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      32.5748 ->  32.5748   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  best missions (composite %%): MH_01_easy_A42 +0.0, MH_01_easy_B42 +0.0, MH_02_easy_A42 +0.0, MH_02_easy_B42 +0.0, MH_03_medium_A42 +0.0, MH_03_medium_B42 +0.0
+  worst missions (composite %%): room6_B42 +0.0, room6_A42 +0.0, room5_B42 +0.0, room5_A42 +0.0, room4_B42 +0.0, room4_A42 +0.0
+RC-1.1.0c vs X108b-final24-safe-2e-3-0.04 on DEV2
+missions 136, byte-identical outputs 136, new failures 0 [], decision changes 0 []
+  [EuRoC] composite +0.00 % [+0.00, +0.00]   points 17.426 -> 17.426 (+0.000 [+0.000, +0.000])   ms/IMU-s 8.06 -> 9.69
+      ate       2.2259 ->   2.2259   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        2.0469 ->   2.0469   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     2.6621 ->   2.6621   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      1.9879 ->   1.9879   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3164 ->   0.3164   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2834 ->   0.2834   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     2.1764 ->   2.1764   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.4566 ->   0.4566   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    3.1642 ->   3.1642   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      38.9952 ->  38.9952   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [TUM-VI] composite +0.00 % [+0.00, +0.00]   points 26.967 -> 26.967 (+0.000 [+0.000, +0.000])   ms/IMU-s 7.25 -> 8.79
+      ate       0.4219 ->   0.4219   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        0.3555 ->   0.3555   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     0.5943 ->   0.5943   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      0.4010 ->   0.4010   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.4023 ->   0.4023   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.1553 ->   0.1553   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     0.4151 ->   0.4151   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.0709 ->   0.0709   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    0.6980 ->   0.6980   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori       7.0730 ->   7.0730   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [ALL] composite +0.00 % [+0.00, +0.00]   points 20.793 -> 20.793 (+0.000 [+0.000, +0.000])   ms/IMU-s 7.77 -> 9.50
+      ate       1.5892 ->   1.5892   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        1.4499 ->   1.4499   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     1.9323 ->   1.9323   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      1.4279 ->   1.4279   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3467 ->   0.3467   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2382 ->   0.2382   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     1.5547 ->   1.5547   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.3205 ->   0.3205   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    2.2938 ->   2.2938   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      27.7285 ->  27.7285   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  best missions (composite %%): MH_01_easy_A2001 +0.0, MH_01_easy_A2002 +0.0, MH_01_easy_A2003 +0.0, MH_01_easy_A2004 +0.0, MH_01_easy_B2001 +0.0, MH_01_easy_B2002 +0.0
+  worst missions (composite %%): room6_B2004 +0.0, room6_B2003 +0.0, room6_B2002 +0.0, room6_B2001 +0.0, room6_A2004 +0.0, room6_A2003 +0.0
+RC-1.1.0c vs X108b-final24-safe-2e-3-0.04 on CONF
+missions 340, byte-identical outputs 340, new failures 0 [], decision changes 0 []
+  [EuRoC] composite +0.00 % [+0.00, +0.00]   points 17.514 -> 17.514 (+0.000 [+0.000, +0.000])   ms/IMU-s 8.43 -> 12.14
+      ate       2.2517 ->   2.2517   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        2.0594 ->   2.0594   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     2.6355 ->   2.6355   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      1.9728 ->   1.9728   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3315 ->   0.3315   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2833 ->   0.2833   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     2.2003 ->   2.2003   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.4664 ->   0.4664   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    3.1915 ->   3.1915   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      40.5760 ->  40.5760   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [TUM-VI] composite +0.00 % [+0.00, +0.00]   points 27.411 -> 27.411 (+0.000 [+0.000, +0.000])   ms/IMU-s 7.28 -> 10.80
+      ate       0.4149 ->   0.4149   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        0.3431 ->   0.3431   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     0.6046 ->   0.6046   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      0.3799 ->   0.3799   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3947 ->   0.3947   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.1532 ->   0.1532   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     0.4079 ->   0.4079   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.0714 ->   0.0714   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    0.6538 ->   0.6538   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori       7.3226 ->   7.3226   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [ALL] composite +0.00 % [+0.00, +0.00]   points 21.007 -> 21.007 (+0.000 [+0.000, +0.000])   ms/IMU-s 8.14 -> 10.95
+      ate       1.6034 ->   1.6034   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        1.4536 ->   1.4536   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     1.9187 ->   1.9187   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      1.4106 ->   1.4106   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.3538 ->   0.3538   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2374 ->   0.2374   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     1.5677 ->   1.5677   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.3270 ->   0.3270   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    2.2959 ->   2.2959   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      28.8395 ->  28.8395   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  best missions (composite %%): MH_01_easy_A3001 +0.0, MH_01_easy_A3002 +0.0, MH_01_easy_A3003 +0.0, MH_01_easy_A3004 +0.0, MH_01_easy_A3005 +0.0, MH_01_easy_A3006 +0.0
+  worst missions (composite %%): room6_B3010 +0.0, room6_B3009 +0.0, room6_B3008 +0.0, room6_B3007 +0.0, room6_B3006 +0.0, room6_B3005 +0.0
+RC-1.1.0c vs X108b-final24-safe-2e-3-0.04 on STRESS
+missions 340, byte-identical outputs 340, new failures 0 [], decision changes 0 []
+  [EuRoC] composite +0.00 % [+0.00, +0.00]   points 16.468 -> 16.468 (+0.000 [+0.000, +0.000])   ms/IMU-s 8.73 -> 10.70
+      ate       2.4338 ->   2.4338   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        2.1945 ->   2.1945   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     2.8002 ->   2.8002   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      2.2191 ->   2.2191   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.7428 ->   0.7428   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.3284 ->   0.3284   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     2.3755 ->   2.3755   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.5065 ->   0.5065   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    3.6357 ->   3.6357   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      47.9628 ->  47.9628   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [TUM-VI] composite +0.00 % [+0.00, +0.00]   points 27.598 -> 27.598 (+0.000 [+0.000, +0.000])   ms/IMU-s 7.40 -> 6.83
+      ate       0.4480 ->   0.4480   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        0.3478 ->   0.3478   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     0.7980 ->   0.7980   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      0.4192 ->   0.4192   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.7482 ->   0.7482   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2014 ->   0.2014   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     0.4416 ->   0.4416   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.0707 ->   0.0707   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    0.6684 ->   0.6684   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      13.9432 ->  13.9432   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  [ALL] composite +0.00 % [+0.00, +0.00]   points 20.396 -> 20.396 (+0.000 [+0.000, +0.000])   ms/IMU-s 8.18 -> 9.25
+      ate       1.7329 ->   1.7329   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp        1.5427 ->   1.5427   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_abs     2.0936 ->   2.0936   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      drop      1.5839 ->   1.5839   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      b_anc     0.7447 ->   0.7447   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      rpe_t     0.2836 ->   0.2836   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_h     1.6930 ->   1.6930   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ate_v     0.3527 ->   0.3527   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      wp_max    2.5884 ->   2.5884   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+      ori      35.9559 ->  35.9559   +0.00 % [ +0.00,  +0.00]  wins  0 losses  0
+  best missions (composite %%): MH_01_easy_A4001_c0.6 +0.0, MH_01_easy_A4002_c0.6 +0.0, MH_01_easy_A4003_c0.8 +0.0, MH_01_easy_A4004_c0.8 +0.0, MH_01_easy_A4011_ml0.5 +0.0, MH_01_easy_A4012_ml0.5 +0.0
+  worst missions (composite %%): room6_B4022_g3 +0.0, room6_B4021_g1 +0.0, room6_B4014_ml1.5 +0.0, room6_B4013_ml1.5 +0.0, room6_B4012_ml0.5 +0.0, room6_B4011_ml0.5 +0.0

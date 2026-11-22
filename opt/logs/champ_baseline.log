@@ -1,0 +1,16 @@
+CHAMP-1.0.0 on DEV: 136 missions in 13.0 s, 0 errors
+  EuRoC  n=88   ate 2.6832  wp 2.5000  b_abs 2.8617  drop 2.3127  b_anc 0.3306  rpe_t 0.3432  pts 13.04  ms/s 7.81
+  TUM-VI n=48   ate 0.4519  wp 0.3806  b_abs 0.5964  drop 0.4186  b_anc 0.3828  rpe_t 0.1712  pts 25.90  ms/s 6.91
+  ALL    n=136  ate 1.8957  wp 1.7519  b_abs 2.0622  drop 1.6442  b_anc 0.3491  rpe_t 0.2825  pts 17.58  ms/s 7.31
+CHAMP-1.0.0 on DEV2: 136 missions in 13.1 s, 0 errors
+  EuRoC  n=88   ate 2.6365  wp 2.4723  b_abs 2.8232  drop 2.2397  b_anc 0.3238  rpe_t 0.3413  pts 13.62  ms/s 7.83
+  TUM-VI n=48   ate 0.4542  wp 0.3954  b_abs 0.6006  drop 0.4213  b_anc 0.3892  rpe_t 0.1753  pts 25.28  ms/s 6.92
+  ALL    n=136  ate 1.8663  wp 1.7393  b_abs 2.0387  drop 1.5979  b_anc 0.3469  rpe_t 0.2827  pts 17.74  ms/s 7.35
+CHAMP-1.0.0 on CONF: 340 missions in 33.2 s, 0 errors
+  EuRoC  n=220  ate 2.6623  wp 2.4858  b_abs 2.7213  drop 2.2485  b_anc 0.3266  rpe_t 0.3453  pts 13.68  ms/s 8.16
+  TUM-VI n=120  ate 0.4490  wp 0.3871  b_abs 0.5992  drop 0.4062  b_anc 0.3768  rpe_t 0.1719  pts 25.68  ms/s 7.18
+  ALL    n=340  ate 1.8812  wp 1.7451  b_abs 1.9723  drop 1.5983  b_anc 0.3443  rpe_t 0.2841  pts 17.92  ms/s 7.61
+CHAMP-1.0.0 on STRESS: 340 missions in 29.3 s, 0 errors
+  EuRoC  n=220  ate 2.7425  wp 2.5147  b_abs 2.8941  drop 2.4920  b_anc 0.7425  rpe_t 0.3788  pts 13.30  ms/s 8.06
+  TUM-VI n=120  ate 0.4872  wp 0.3945  b_abs 0.8024  drop 0.4627  b_anc 0.7516  rpe_t 0.2210  pts 25.51  ms/s 7.14
+  ALL    n=340  ate 1.9465  wp 1.7664  b_abs 2.1559  drop 1.7757  b_anc 0.7457  rpe_t 0.3231  pts 17.61  ms/s 7.57

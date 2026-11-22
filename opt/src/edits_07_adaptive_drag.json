@@ -1,0 +1,12 @@
+[
+ ["           acc_comp=0, acc_comp_hand=1, acc_comp_rotor=0, acc_comp_gain=1.0, drag_off_rest=0, tau_g_rotor=None, tau_g_hand=None)",
+  "           acc_comp=0, acc_comp_hand=1, acc_comp_rotor=0, acc_comp_gain=1.0, drag_off_rest=0, tau_g_rotor=None, tau_g_hand=None,\n           drag_adapt_r=None, drag_tight=(0.05, 300.0, 0.15))     # X043: drag-bias prior (sc, tauc, sc0) used when the guard radius >= drag_adapt_r"],
+ ["        pkh, vkh = smooth_hand(Mz); rh = radius(Mz.bt, pkh, vkh); del pkh, vkh; _mark(\"guard-hand\")\n        pk, vk = smooth_rotor(Mz); rr = radius(Mz.bt, pk, vk); bt = Mz.bt; _mark(\"smoother-rotor\")",
+  "        pkh, vkh = smooth_hand(Mz); rh = radius(Mz.bt, pkh, vkh); del pkh, vkh; _mark(\"guard-hand\")\n        dsel = tuple(CFG[\"drag_tight\"]) if CFG[\"drag_adapt_r\"] is not None and rh >= CFG[\"drag_adapt_r\"] else None\n        pk, vk = smooth_rotor(Mz, drag=dsel); rr = radius(Mz.bt, pk, vk); bt = Mz.bt; _mark(\"smoother-rotor\"); RAD.update(rh=rh, rr=rr, tight=dsel is not None)"],
+ ["    _mark(\"start\"); D = Data(src); D.unit_check()",
+  "    _mark(\"start\"); RAD.clear(); D = Data(src); D.unit_check()"],
+ ["                implausible=ri[\"implausible\"], spikes_legacy=ri[\"spikes\"], slots=D.N)",
+  "                implausible=ri[\"implausible\"], spikes_legacy=ri[\"spikes\"], slots=D.N, **RAD)"],
+ ["def accel_sub(F, att, bt, pk, vk, gain):",
+  "RAD = {}                                                            # guard radii of the last estimate (diagnostics, info)\ndef accel_sub(F, att, bt, pk, vk, gain):"]
+]

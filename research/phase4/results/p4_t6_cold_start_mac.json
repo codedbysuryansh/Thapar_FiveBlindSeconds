@@ -1,0 +1,111 @@
+{
+ "input": "data/phase4/inputs/MH_01_easy_B42.zip",
+ "host": "macOS-27.2.1-arm64-arm-64bit",
+ "results": [
+  {
+   "label": "mac-cp313-latest",
+   "python": "/opt/homebrew/bin/python3.13",
+   "numpy_spec": "-r",
+   "venv_s": 1.1351876250118949,
+   "pip_s": 1.4599648749863263,
+   "versions": "3.13.7 2.5.5",
+   "installed": [
+    "numpy==2.5.5",
+    "pip==25.2"
+   ],
+   "run_s": 1.1519190830003936,
+   "exit": 0,
+   "stdout": "estimated_trajectory.txt",
+   "stderr": "[main] rows written, platform rotor, mode spline, lock 0.0100",
+   "T1": {
+    "input": "data/phase4/inputs/MH_01_easy_B42.zip",
+    "output": "/tmp/fbs_t6_mac-cp313-latest_uaco6oiq/estimated_trajectory.txt",
+    "ok": true,
+    "problems": [],
+    "rows_in": 35629,
+    "bytes": 3267482,
+    "rows_out": 35629,
+    "bad_format": 0,
+    "bad_timestamp": 0,
+    "bad_decimals": 0,
+    "non_finite": 0,
+    "bad_unit_quaternion": 0,
+    "max_unit_error": 8.685472874248035e-08,
+    "first_failures": {}
+   },
+   "identical_to_reference": true,
+   "pass": true
+  },
+  {
+   "label": "mac-cp310-np1.22.4",
+   "python": "/opt/homebrew/bin/python3.10",
+   "numpy_spec": "numpy==1.22.4",
+   "venv_s": 1.3150510000123177,
+   "pip_s": 1.284315582975978,
+   "versions": "3.10.20 1.22.4",
+   "installed": [
+    "numpy==1.22.4",
+    "pip==26.0.1",
+    "setuptools==82.0.0"
+   ],
+   "run_s": 1.1296145830128808,
+   "exit": 0,
+   "stdout": "estimated_trajectory.txt",
+   "stderr": "[main] rows written, platform rotor, mode spline, lock 0.0100",
+   "T1": {
+    "input": "data/phase4/inputs/MH_01_easy_B42.zip",
+    "output": "/tmp/fbs_t6_mac-cp310-np1.22.4_jq45bu4_/estimated_trajectory.txt",
+    "ok": true,
+    "problems": [],
+    "rows_in": 35629,
+    "bytes": 3267482,
+    "rows_out": 35629,
+    "bad_format": 0,
+    "bad_timestamp": 0,
+    "bad_decimals": 0,
+    "non_finite": 0,
+    "bad_unit_quaternion": 0,
+    "max_unit_error": 8.685472874248035e-08,
+    "first_failures": {}
+   },
+   "identical_to_reference": true,
+   "pass": true
+  },
+  {
+   "label": "mac-cp310-np1.26.4",
+   "python": "/opt/homebrew/bin/python3.10",
+   "numpy_spec": "numpy==1.26.4",
+   "venv_s": 1.2474142090068199,
+   "pip_s": 1.1867121660034172,
+   "versions": "3.10.20 1.26.4",
+   "installed": [
+    "numpy==1.26.4",
+    "pip==26.0.1",
+    "setuptools==82.0.0"
+   ],
+   "run_s": 1.084924458002206,
+   "exit": 0,
+   "stdout": "estimated_trajectory.txt",
+   "stderr": "[main] rows written, platform rotor, mode spline, lock 0.0100",
+   "T1": {
+    "input": "data/phase4/inputs/MH_01_easy_B42.zip",
+    "output": "/tmp/fbs_t6_mac-cp310-np1.26.4_ptbptj3n/estimated_trajectory.txt",
+    "ok": true,
+    "problems": [],
+    "rows_in": 35629,
+    "bytes": 3267482,
+    "rows_out": 35629,
+    "bad_format": 0,
+    "bad_timestamp": 0,
+    "bad_decimals": 0,
+    "non_finite": 0,
+    "bad_unit_quaternion": 0,
+    "max_unit_error": 8.685472874248035e-08,
+    "first_failures": {}
+   },
+   "identical_to_reference": true,
+   "pass": true
+  }
+ ],
+ "pass_": true
+}

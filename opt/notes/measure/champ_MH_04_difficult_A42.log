@@ -1,0 +1,5 @@
+MH_04_difficult_A42.zip: 19753 rows, 101.6 s of IMU on Apple M3 Pro (macOS-27.2.1-arm64-arm-64bit, Python 3.12.7, NumPy 2.5.4)
+  heap peak MB: after imports 1.744 | after numpy 10.685 | whole program 18.166 | with interpreter start-up 19.977
+  run: 0.530 s min, 0.532 s median -> 5.22 / 5.23 ms per IMU-second
+  start-up (median s): python 0.016, + import numpy 0.050, + import main 0.066; end to end 0.599 s = 5.90 ms per IMU-second
+  stages (s / heap MB): parse+grid 0.029/1.35, repair 0.007/1.36, lock+rest 0.008/1.49, front-const 0.057/1.43, front-final 0.168/1.74, measurements 0.039/1.72, guard-hand 0.054/1.60, smoother-rotor 0.124/1.70, output 0.044/1.61

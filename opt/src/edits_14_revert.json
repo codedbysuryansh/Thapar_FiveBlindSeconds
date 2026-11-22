@@ -1,0 +1,14 @@
+[
+ [
+  "        loose_guard = CFG[\"guard_ref\"] == \"loose\" and rr > CFG[\"guard\"] * max(rh, 1e-6)         # X110: the guard checks the loose solution first",
+  "        loose_guard = CFG[\"guard_ref\"] in (\"loose\", \"revert\") and rr > CFG[\"guard\"] * max(rh, 1e-6)   # X110: the guard checks the loose solution first"
+ ],
+ [
+  "            del pk, vk; pk, vk = smooth_rotor(Mz, drag=tuple(CFG[\"drag_tight\"])); rr = radius(Mz.bt, pk, vk); RAD[\"tight\"] = True\n        RAD[\"rr\"] = rr; _mark(\"smoother-rotor\")",
+  "            del pk, vk; pk, vk = smooth_rotor(Mz, drag=tuple(CFG[\"drag_tight\"])); rr = radius(Mz.bt, pk, vk); RAD[\"tight\"] = True\n            if CFG[\"guard_ref\"] == \"revert\" and rr > CFG[\"guard\"] * max(rh, 1e-6):             # X110d: the steady solution fails the guard -> loose solution again\n                del pk, vk; pk, vk = smooth_rotor(Mz, drag=None); rr = radius(Mz.bt, pk, vk); RAD[\"tight\"] = False; RAD[\"reverted\"] = True\n        RAD[\"rr\"] = rr; _mark(\"smoother-rotor\")"
+ ],
+ [
+  "        if loose_guard or (CFG[\"guard_ref\"] != \"loose\" and rr > CFG[\"guard\"] * max(rh, 1e-6)):",
+  "        if loose_guard or (CFG[\"guard_ref\"] == \"final\" and rr > CFG[\"guard\"] * max(rh, 1e-6)):"
+ ]
+]

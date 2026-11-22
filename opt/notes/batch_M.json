@@ -1,0 +1,350 @@
+[
+ {
+  "id": "X116a-steady-sc0.02",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.02,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    }
+   }
+  },
+  "title": "Steady drag prior of the switched branch: sd 0.02 m/s^2, tau 1000 s, initial sd 0.15",
+  "hypothesis": "The switched (large-workspace) branch has its own optimum, not measured in round 1",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X116b-steady-sc0.04",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.04,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    }
+   }
+  },
+  "title": "Steady drag prior of the switched branch: sd 0.04 m/s^2, tau 1000 s, initial sd 0.15",
+  "hypothesis": "The switched (large-workspace) branch has its own optimum, not measured in round 1",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X116c-steady-tau3000",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      3000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    }
+   }
+  },
+  "title": "Steady drag prior of the switched branch: sd 0.03 m/s^2, tau 3000 s, initial sd 0.15",
+  "hypothesis": "The switched (large-workspace) branch has its own optimum, not measured in round 1",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X116d-steady-sc0_0.10",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.1
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    }
+   }
+  },
+  "title": "Steady drag prior of the switched branch: sd 0.03 m/s^2, tau 1000 s, initial sd 0.1",
+  "hypothesis": "The switched (large-workspace) branch has its own optimum, not measured in round 1",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X116e-steady-sc0_0.25",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.25
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    }
+   }
+  },
+  "title": "Steady drag prior of the switched branch: sd 0.03 m/s^2, tau 1000 s, initial sd 0.25",
+  "hypothesis": "The switched (large-workspace) branch has its own optimum, not measured in round 1",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X116f-steady-tau300",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      300.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    }
+   }
+  },
+  "title": "Steady drag prior of the switched branch: sd 0.03 m/s^2, tau 300 s, initial sd 0.15",
+  "hypothesis": "The switched (large-workspace) branch has its own optimum, not measured in round 1",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X117a-matern-ell1.25",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    },
+    "MATERN": [
+     1.25,
+     2.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior ell 1.25 s, sigma_p 2 m, tau_b 20 s, sigma_b 0.1 (with the 24 s final gravity)",
+  "hypothesis": "With less tilt leakage (24 s final gravity) the hand-held motion prior has a different optimum",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X117b-matern-ell0.8",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    },
+    "MATERN": [
+     0.8,
+     2.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior ell 0.8 s, sigma_p 2 m, tau_b 20 s, sigma_b 0.1 (with the 24 s final gravity)",
+  "hypothesis": "With less tilt leakage (24 s final gravity) the hand-held motion prior has a different optimum",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X117c-matern-sb0.07",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    },
+    "MATERN": [
+     1.0,
+     2.0,
+     20.0,
+     0.07
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior ell 1 s, sigma_p 2 m, tau_b 20 s, sigma_b 0.07 (with the 24 s final gravity)",
+  "hypothesis": "With less tilt leakage (24 s final gravity) the hand-held motion prior has a different optimum",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X117d-matern-sb0.14",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    },
+    "MATERN": [
+     1.0,
+     2.0,
+     20.0,
+     0.14
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior ell 1 s, sigma_p 2 m, tau_b 20 s, sigma_b 0.14 (with the 24 s final gravity)",
+  "hypothesis": "With less tilt leakage (24 s final gravity) the hand-held motion prior has a different optimum",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X117e-matern-taub40",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    },
+    "MATERN": [
+     1.0,
+     2.0,
+     40.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior ell 1 s, sigma_p 2 m, tau_b 40 s, sigma_b 0.1 (with the 24 s final gravity)",
+  "hypothesis": "With less tilt leakage (24 s final gravity) the hand-held motion prior has a different optimum",
+  "parent": "X110d-guard-revert"
+ },
+ {
+  "id": "X117f-matern-sp3",
+  "src": "../src/snapshots/main_dev_L.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "revert"
+    },
+    "MATERN": [
+     1.0,
+     3.0,
+     20.0,
+     0.1
+    ]
+   }
+  },
+  "title": "Hand-held Matern prior ell 1 s, sigma_p 3 m, tau_b 20 s, sigma_b 0.1 (with the 24 s final gravity)",
+  "hypothesis": "With less tilt leakage (24 s final gravity) the hand-held motion prior has a different optimum",
+  "parent": "X110d-guard-revert"
+ }
+]

@@ -1,0 +1,49 @@
+[
+ {
+  "id": "X108b-final24-safe-2e-3-0.04",
+  "src": "~/SamsungPRISM_FiveBlindSeconds/opt/candidates/X108b-final24-safe-2e-3-0.04/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04
+    }
+   }
+  },
+  "title": "Final 24 s hand-held gravity if const mode, |mu| <= 0.002 rad/s, gyro noise <= 0.04 rad/s",
+  "hypothesis": "Use the long hand-held gravity only when the gyro is clean: constant bias mode, small residual constant bias |mu| and small gyro sample noise",
+  "parent": "X108a-final24-const-stats"
+ },
+ {
+  "id": "X107f-rotor-only",
+  "src": "~/SamsungPRISM_FiveBlindSeconds/opt/candidates/X107f-rotor-only/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rotor part of X104 only (rest + no drag at rest + switched drag prior); hand-held = champion",
+  "hypothesis": "Separates the rotor gain from the hand-held change",
+  "parent": "X104-combo5"
+ }
+]

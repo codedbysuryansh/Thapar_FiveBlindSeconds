@@ -1,0 +1,4 @@
+[
+ ["    pk = np.empty((K, 3)); vk = np.empty((K, 3))\n    def take(k, xs): pk[k] = xs[[0, 4, 8]]; vk[k] = xs[[1, 5, 9]]\n    _rts(K, np.zeros(n), P0, fwd, take); return pk, vk",
+  "    pk = np.empty((K, 3)); vk = np.empty((K, 3)); TS = np.empty((K, n)) if TRACE is not None else None\n    def take(k, xs):\n        pk[k] = xs[[0, 4, 8]]; vk[k] = xs[[1, 5, 9]]\n        if TS is not None: TS[k] = xs\n    _rts(K, np.zeros(n), P0, fwd, take)\n    if TS is not None: TRACE[\"rotor_states\"] = TS\n    return pk, vk"]
+]

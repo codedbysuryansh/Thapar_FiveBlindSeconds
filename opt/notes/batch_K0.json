@@ -1,0 +1,10 @@
+[
+ {
+  "id": "DEV0-dev-identity-K",
+  "src": "../src/snapshots/main_dev_K.py",
+  "config": {},
+  "title": "Snapshot K with defaults must equal the champion",
+  "hypothesis": "identity",
+  "parent": "CHAMP-1.0.0"
+ }
+]

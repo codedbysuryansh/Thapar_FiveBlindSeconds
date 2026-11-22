@@ -1,0 +1,82 @@
+candidate P01a-sd_drag-0.8 created (main.py f0d9e3c079564044)
+P01a-sd_drag-0.8                   ALL  +1.36% [ -0.63, +4.03] | EuRoC  +1.49% [ -0.66, +4.40] | TUM  +0.00% [ +0.00, +0.00] | ate  +2.1/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.71
+candidate P01b-sd_drag-1.1 created (main.py f0d9e3c079564044)
+P01b-sd_drag-1.1                   ALL  +0.12% [ -0.68, +1.09] | EuRoC  +0.13% [ -0.75, +1.19] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.3/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.60
+candidate P01c-sd_drag-1.8 created (main.py f0d9e3c079564044)
+P01c-sd_drag-1.8                   ALL  +0.72% [ -0.15, +1.55] | EuRoC  +0.78% [ -0.15, +1.69] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.8/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.67
+candidate P01d-sd_drag-2.5 created (main.py f0d9e3c079564044)
+P01d-sd_drag-2.5                   ALL  +2.90% [ +0.75, +5.04] | EuRoC  +3.16% [ +0.87, +5.44] | TUM  +0.00% [ +0.00, +0.00] | ate  +3.5/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.72
+candidate P02a-rotor_sigma_a-0.6 created (main.py f0d9e3c079564044)
+P02a-rotor_sigma_a-0.6             ALL  +5.32% [ +1.89, +8.42] | EuRoC  +5.80% [ +1.99, +9.01] | TUM  +0.00% [ +0.00, +0.00] | ate  +6.4/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.55
+candidate P02b-rotor_sigma_a-1.5 created (main.py f0d9e3c079564044)
+P02b-rotor_sigma_a-1.5             ALL  +0.19% [ -1.73, +3.41] | EuRoC  +0.25% [ -1.88, +4.00] | TUM  +0.00% [ +0.00, +0.00] | ate  -0.7/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.79
+candidate P02c-rotor_sigma_a-2.2 created (main.py f0d9e3c079564044)
+P02c-rotor_sigma_a-2.2             ALL  +8.76% [ +2.34,+18.15] | EuRoC  +9.72% [ +2.63,+20.51] | TUM  +0.00% [ +0.00, +0.00] | ate  +6.2/ +0.0 | ident 48 fail 0 dec 1 | ms 7.49->7.64
+candidate P03a-rotor_T_p-12 created (main.py f0d9e3c079564044)
+P03a-rotor_T_p-12                  ALL  +9.00% [ +3.56,+13.90] | EuRoC  +9.83% [ +3.85,+15.25] | TUM  +0.00% [ +0.00, +0.00] | ate +10.7/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.76
+candidate P03b-rotor_T_p-30 created (main.py f0d9e3c079564044)
+P03b-rotor_T_p-30                  ALL  +3.26% [ -2.61,+11.45] | EuRoC  +3.65% [ -2.75,+12.90] | TUM  +0.00% [ +0.00, +0.00] | ate  +1.3/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.56
+candidate P03c-rotor_T_p-45 created (main.py f0d9e3c079564044)
+P03c-rotor_T_p-45                  ALL +23.49% [ +7.12,+45.48] | EuRoC +25.90% [ +8.31,+51.41] | TUM  +0.00% [ +0.00, +0.00] | ate +20.8/ +0.0 | ident 48 fail 0 dec 8 | ms 7.49->7.72
+candidate P04a-rotor_tau_v-1 created (main.py f0d9e3c079564044)
+P04a-rotor_tau_v-1                 ALL  +4.22% [ +1.66, +6.68] | EuRoC  +4.60% [ +1.78, +7.19] | TUM  +0.00% [ +0.00, +0.00] | ate  +4.8/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.71
+candidate P04b-rotor_tau_v-4 created (main.py f0d9e3c079564044)
+P04b-rotor_tau_v-4                 ALL  -0.12% [ -1.55, +1.69] | EuRoC  -0.11% [ -1.63, +1.96] | TUM  +0.00% [ +0.00, +0.00] | ate  -0.4/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.70
+candidate P05a-rotor_tau_a-0.15 created (main.py f0d9e3c079564044)
+P05a-rotor_tau_a-0.15              ALL  +3.46% [ +0.93, +5.66] | EuRoC  +3.77% [ +0.94, +6.07] | TUM  +0.00% [ +0.00, +0.00] | ate  +4.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.60
+candidate P05b-rotor_tau_a-0.6 created (main.py f0d9e3c079564044)
+P05b-rotor_tau_a-0.6               ALL  +0.08% [ -1.65, +2.85] | EuRoC  +0.12% [ -1.80, +3.32] | TUM  +0.00% [ +0.00, +0.00] | ate  -0.9/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.76
+candidate P06a-rotor_sigma_b-0.05 created (main.py f0d9e3c079564044)
+P06a-rotor_sigma_b-0.05            ALL  +0.14% [ -0.01, +0.37] | EuRoC  +0.16% [ -0.00, +0.43] | TUM  +0.00% [ +0.00, +0.00] | ate  -0.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.70
+candidate P06b-rotor_sigma_b-0.2 created (main.py f0d9e3c079564044)
+P06b-rotor_sigma_b-0.2             ALL  -0.18% [ -0.60, +0.11] | EuRoC  -0.20% [ -0.70, +0.12] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.2/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.59
+candidate P07a-rotor_tau_b-10 created (main.py f0d9e3c079564044)
+P07a-rotor_tau_b-10                ALL  +0.02% [ -0.12, +0.11] | EuRoC  +0.02% [ -0.14, +0.12] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.1/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.77
+candidate P07b-rotor_tau_b-40 created (main.py f0d9e3c079564044)
+P07b-rotor_tau_b-40                ALL  +0.03% [ -0.03, +0.14] | EuRoC  +0.04% [ -0.03, +0.17] | TUM  +0.00% [ +0.00, +0.00] | ate  -0.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.68
+candidate P08a-tau_c-30 created (main.py f0d9e3c079564044)
+P08a-tau_c-30                      ALL  +2.69% [ -0.20, +5.18] | EuRoC  +2.91% [ -0.25, +5.55] | TUM  +0.00% [ +0.00, +0.00] | ate  +5.2/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.65
+candidate P08b-tau_c-300 created (main.py f0d9e3c079564044)
+P08b-tau_c-300                     ALL  -2.12% [ -4.05, +0.24] | EuRoC  -2.28% [ -4.32, +0.37] | TUM  +0.00% [ +0.00, +0.00] | ate  -3.8/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.54
+candidate P08c-sc-0.08 created (main.py f0d9e3c079564044)
+P08c-sc-0.08                       ALL  -4.01% [ -6.74, -0.70] | EuRoC  -4.38% [ -7.34, -0.69] | TUM  +0.00% [ +0.00, +0.00] | ate  -3.9/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.55
+candidate P08d-sc-0.3 created (main.py f0d9e3c079564044)
+P08d-sc-0.3                        ALL  +4.68% [ +1.57, +7.30] | EuRoC  +5.09% [ +1.69, +7.93] | TUM  +0.00% [ +0.00, +0.00] | ate  +6.4/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.81
+candidate P09a-matern_ell-0.6 created (main.py f0d9e3c079564044)
+P09a-matern_ell-0.6                ALL  +8.96% [ +2.50,+14.53] | EuRoC  +8.39% [ +0.00,+14.34] | TUM +16.03% [ +8.40,+27.32] | ate  +9.6/+16.0 | ident 71 fail 0 dec 17 | ms 7.49->7.80
+candidate P09b-matern_ell-1.5 created (main.py f0d9e3c079564044)
+P09b-matern_ell-1.5                ALL  -0.09% [ -0.27, +0.05] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -1.20% [ -2.52, +0.75] | ate  +0.0/ -0.9 | ident 88 fail 0 dec 0 | ms 7.49->7.70
+candidate P09c-matern_sigma_p-1 created (main.py f0d9e3c079564044)
+P09c-matern_sigma_p-1              ALL  +0.36% [ +0.05, +0.82] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +4.65% [ +1.05, +8.96] | ate  +0.0/ +5.4 | ident 88 fail 0 dec 0 | ms 7.49->7.66
+candidate P09d-matern_sigma_p-3 created (main.py f0d9e3c079564044)
+P09d-matern_sigma_p-3              ALL  -0.03% [ -0.22, +0.13] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -0.50% [ -1.96, +1.86] | ate  +0.0/ -0.6 | ident 88 fail 0 dec 0 | ms 7.49->7.58
+candidate P09e-matern_sigma_b-0.05 created (main.py f0d9e3c079564044)
+P09e-matern_sigma_b-0.05           ALL  -0.02% [ -0.04, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -0.22% [ -0.40, +0.06] | ate  +0.0/ -0.2 | ident 88 fail 0 dec 0 | ms 7.49->7.74
+candidate P09f-matern_sigma_b-0.2 created (main.py f0d9e3c079564044)
+P09f-matern_sigma_b-0.2            ALL  +0.07% [ +0.00, +0.17] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.95% [ +0.16, +1.62] | ate  +0.0/ +1.2 | ident 88 fail 0 dec 0 | ms 7.49->7.72
+candidate P09g-matern_tau_b-10 created (main.py f0d9e3c079564044)
+P09g-matern_tau_b-10               ALL  +0.04% [ +0.01, +0.06] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.41% [ +0.21, +0.64] | ate  +0.0/ +0.5 | ident 88 fail 0 dec 0 | ms 7.49->7.49
+candidate P09h-matern_tau_b-40 created (main.py f0d9e3c079564044)
+P09h-matern_tau_b-40               ALL  -0.02% [ -0.04, -0.01] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -0.24% [ -0.35, -0.11] | ate  +0.0/ -0.3 | ident 88 fail 0 dec 0 | ms 7.49->7.92
+candidate P10a-tau_g-2 created (main.py f0d9e3c079564044)
+P10a-tau_g-2                       ALL  +4.88% [ +2.22, +9.07] | EuRoC  +3.08% [ +0.64, +6.66] | TUM +25.90% [+11.49,+51.43] | ate  +2.9/+30.1 | ident 0 fail 0 dec 36 | ms 7.49->8.22
+candidate P10b-tau_g-4.5 created (main.py f0d9e3c079564044)
+P10b-tau_g-4.5                     ALL  -0.96% [ -2.76, +0.70] | EuRoC  -0.50% [ -2.34, +1.40] | TUM  -6.31% [-10.31, -0.99] | ate  +0.2/ -6.7 | ident 0 fail 0 dec 0 | ms 7.49->7.44
+candidate P10c-tau_g-6 created (main.py f0d9e3c079564044)
+P10c-tau_g-6                       ALL  +0.56% [ -2.03, +3.27] | EuRoC  +1.33% [ -1.37, +4.44] | TUM  -7.94% [-12.68, -0.63] | ate  +1.0/ -8.1 | ident 0 fail 0 dec 0 | ms 7.49->7.09
+candidate P11a-k2-0.15 created (main.py f0d9e3c079564044)
+P11a-k2-0.15                       ALL  -0.05% [ -0.11, -0.00] | EuRoC  -0.04% [ -0.09, +0.02] | TUM  -0.23% [ -0.39, -0.14] | ate  -0.0/ -0.1 | ident 0 fail 0 dec 0 | ms 7.49->7.74
+candidate P11b-k2-0.4 created (main.py f0d9e3c079564044)
+P11b-k2-0.4                        ALL  +0.15% [ +0.06, +0.26] | EuRoC  +0.07% [ -0.02, +0.17] | TUM  +0.99% [ +0.50, +1.86] | ate  +0.0/ +0.7 | ident 0 fail 0 dec 0 | ms 7.49->7.75
+candidate P12a-bias_jump-0.25 created (main.py f0d9e3c079564044)
+P12a-bias_jump-0.25                ALL  +1.33% [ +0.43, +2.50] | EuRoC  +1.44% [ +0.45, +2.83] | TUM  -0.10% [ -2.03, +3.21] | ate  +1.3/ -0.2 | ident 0 fail 0 dec 0 | ms 7.49->7.77
+candidate P12b-bias_jump-1 created (main.py f0d9e3c079564044)
+P12b-bias_jump-1                   ALL  +0.01% [ -0.71, +0.80] | EuRoC  -0.33% [ -1.08, +0.36] | TUM  +3.96% [ +0.55, +7.73] | ate  +0.1/ +4.5 | ident 0 fail 0 dec 0 | ms 7.49->7.51
+candidate P13a-sz-0.01 created (main.py f0d9e3c079564044)
+P13a-sz-0.01                       ALL  -0.00% [ -0.00, +0.00] | EuRoC  -0.00% [ -0.00, +0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  -0.0/ +0.0 | ident 52 fail 0 dec 0 | ms 7.49->7.77
+candidate P13b-sz-0.05 created (main.py f0d9e3c079564044)
+P13b-sz-0.05                       ALL  +0.00% [ -0.00, +0.01] | EuRoC  +0.00% [ -0.00, +0.01] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 52 fail 0 dec 0 | ms 7.49->7.77
+candidate P14a-lever-0.05 created (main.py f0d9e3c079564044)
+P14a-lever-0.05                    ALL  +0.08% [ -0.06, +0.35] | EuRoC  +0.09% [ -0.07, +0.39] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.1/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.78
+candidate P14b-lever-0.3 created (main.py f0d9e3c079564044)
+P14b-lever-0.3                     ALL  -0.01% [ -0.03, +0.01] | EuRoC  -0.01% [ -0.04, +0.01] | TUM  +0.00% [ +0.00, +0.00] | ate  -0.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.62

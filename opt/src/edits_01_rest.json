@@ -1,0 +1,6 @@
+[
+ ["CFG = dict(k2=0.25, gate=0.035, thr_hand=2.0e-3, health=0.9, lam2=3.0, knot=20.0, gap_ref=2.0, dec_rotor=8, dec_hand=2, guard=12.0, gs_dec=16)",
+  "CFG = dict(k2=0.25, gate=0.035, thr_hand=2.0e-3, health=0.9, lam2=3.0, knot=20.0, gap_ref=2.0, dec_rotor=8, dec_hand=2, guard=12.0, gs_dec=16,\n           rest_win=0.5, rest_frac=0.05, rest_gate=0.035, rest_minw=3)    # Phase 5 development flags (defaults = v1.0.0)"],
+ ["lock = thrust_lock_fill(D); anchors, zm = rest_info(D); D.set_zmask(zm)",
+  "lock = thrust_lock_fill(D); anchors, zm = rest_info(D, win=CFG[\"rest_win\"], frac=CFG[\"rest_frac\"], gate=CFG[\"rest_gate\"], min_windows=CFG[\"rest_minw\"]); D.set_zmask(zm)"]
+]

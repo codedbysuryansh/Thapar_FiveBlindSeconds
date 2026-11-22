@@ -1,0 +1,8 @@
+[
+ ["           tau_g_final_hand=None, final_const_only=1)              # X045: hand-held final attitude re-computed with this gravity time constant (bias and mode from the 3 s front end)",
+  "           tau_g_final_hand=None, final_const_only=1,              # X045: hand-held final attitude re-computed with this gravity time constant (bias and mode from the 3 s front end)\n           final_mu_max=None, final_sw_max=None)                   # X046: ... only if the residual constant bias |mu| [rad/s] and the gyro sample noise [rad/s] are below these"],
+ ["            Dst = math.sqrt(acc / N)",
+  "            Dst = math.sqrt(acc / N); RAD[\"mu\"] = float(np.linalg.norm(mu))"],
+ ["    if (not rotor) and CFG[\"tau_g_final_hand\"] is not None and (mode == \"const\" or not CFG[\"final_const_only\"]):",
+  "    if not rotor:                                                       # X046 statistics: gyro sample noise (first differences of valid raw samples)\n        s1_ = 0.0; s2_ = 0.0; n_ = 0; Nf = F.N\n        for c0 in range(0, Nf, CH):\n            c1 = min(Nf, c0 + CH + 1); vv = D.valid[c0:c1]; ww = D.decode(c0, c1, \"w\"); ok_ = vv[1:] & vv[:-1]; dd = np.diff(ww, axis=0)[ok_]\n            if len(dd): s1_ += float(dd.sum()); s2_ += float((dd * dd).sum()); n_ += dd.size\n        RAD[\"sw\"] = math.sqrt(max(s2_ / n_ - (s1_ / n_) ** 2, 0.0) / 2.0) if n_ else float(\"nan\")\n    safe_ = (CFG[\"final_mu_max\"] is None or RAD.get(\"mu\", 0.0) <= CFG[\"final_mu_max\"]) and (CFG[\"final_sw_max\"] is None or RAD.get(\"sw\", 0.0) <= CFG[\"final_sw_max\"])\n    if (not rotor) and CFG[\"tau_g_final_hand\"] is not None and (mode == \"const\" or not CFG[\"final_const_only\"]) and safe_:\n        RAD[\"final_long\"] = True"]
+]

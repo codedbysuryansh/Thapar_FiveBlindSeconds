@@ -1,0 +1,6 @@
+[
+ ["           het_acc=0, het_lo=0.2, het_hi=5.0, blind_tau_r=0.5)    # X005: local accelerometer noise per chunk; X030: rotor blind damping time",
+  "           het_acc=0, het_lo=0.2, het_hi=5.0, blind_tau_r=0.5,    # X005: local accelerometer noise per chunk; X030: rotor blind damping time\n           drag_switch_r=None)                                     # X044: re-smooth with drag_tight when the rotor solution's radius >= this (m)"],
+ ["        pk, vk = smooth_rotor(Mz, drag=dsel); rr = radius(Mz.bt, pk, vk); bt = Mz.bt; _mark(\"smoother-rotor\"); RAD.update(rh=rh, rr=rr, tight=dsel is not None)",
+  "        pk, vk = smooth_rotor(Mz, drag=dsel); rr = radius(Mz.bt, pk, vk); bt = Mz.bt; RAD.update(rh=rh, rr0=rr, tight=dsel is not None)\n        if CFG[\"drag_switch_r\"] is not None and dsel is None and rr >= CFG[\"drag_switch_r\"]:     # X044: large workspace -> steady drag offset\n            del pk, vk; pk, vk = smooth_rotor(Mz, drag=tuple(CFG[\"drag_tight\"])); rr = radius(Mz.bt, pk, vk); RAD[\"tight\"] = True\n        RAD[\"rr\"] = rr; _mark(\"smoother-rotor\")"]
+]

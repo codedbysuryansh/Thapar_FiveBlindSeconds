@@ -1,0 +1,75 @@
+{
+ "input": "/in/room2_A42.zip",
+ "rows": 27879,
+ "imu_seconds": 144.11239200000003,
+ "machine": {
+  "platform": "Linux-6.18.44-fc-v726-x86_64-with-glibc2.39",
+  "machine": "x86_64",
+  "python": "3.12.3",
+  "processor": "x86_64",
+  "numpy": "2.5.5",
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz"
+ },
+ "heap_MB": {
+  "after_imports": 2.437872,
+  "after_numpy": 10.861164,
+  "whole_program": 18.299661,
+  "interpreter": 19.968328
+ },
+ "stage_heap_MB": {
+  "start": 0.071087,
+  "parse+grid": 1.620407,
+  "repair": 1.631219,
+  "lock+rest": 1.772948,
+  "front-const": 1.817132,
+  "front-final": 1.908446,
+  "measurements": 2.105804,
+  "smoother-hand": 1.909391,
+  "output": 2.437872
+ },
+ "maxrss_raw": 39244,
+ "run_s": {
+  "min": 1.1127399080000941,
+  "median": 1.1717313010001362,
+  "all": [
+   1.1127399080000941,
+   1.1403812130001825,
+   1.1717313010001362,
+   1.1783201549999376,
+   1.1813527770000292
+  ]
+ },
+ "ms_per_imu_second": {
+  "min": 7.721333971058463,
+  "median": 8.130676930267981
+ },
+ "stage_s": {
+  "parse+grid": 0.065771937999898,
+  "repair": 0.01151994600013495,
+  "lock+rest": 0.01728234999995948,
+  "front-const": 0.14908064599990212,
+  "front-final": 0.18798888000014813,
+  "measurements": 0.05537004500001785,
+  "smoother-hand": 0.500063210999997,
+  "output": 0.12506102399993324
+ },
+ "startup_s": {
+  "python_only": {
+   "min": 0.008429731999967771,
+   "median": 0.00906582199991135
+  },
+  "import_numpy": {
+   "min": 0.05890086399995198,
+   "median": 0.061546963000182586
+  },
+  "import_main": {
+   "min": 0.08617249000008087,
+   "median": 0.08953485600000022
+  },
+  "end_to_end": {
+   "min": 0.9961484360001123,
+   "median": 1.0454352519998338
+  }
+ },
+ "end_to_end_ms_per_imu_second": 7.254305042690802
+}

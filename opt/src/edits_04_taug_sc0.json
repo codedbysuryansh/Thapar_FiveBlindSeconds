@@ -1,0 +1,12 @@
+[
+ ["           acc_comp=0, acc_comp_hand=1, acc_comp_rotor=0, acc_comp_gain=1.0, drag_off_rest=0)",
+  "           acc_comp=0, acc_comp_hand=1, acc_comp_rotor=0, acc_comp_gain=1.0, drag_off_rest=0, tau_g_rotor=None, tau_g_hand=None)"],
+ ["SD_DRAG, SZ, BIAS_JUMP, TAU_C, SC, LEVER_PRIOR, TAU_G = 1.4, 0.02, 0.5, 100.0, 0.15, 0.15, 3.0",
+  "SD_DRAG, SZ, BIAS_JUMP, TAU_C, SC, LEVER_PRIOR, TAU_G = 1.4, 0.02, 0.5, 100.0, 0.15, 0.15, 3.0\nSC0 = None                                        # Phase 5: initial drag-bias prior SD (None = SC, the stationary SD)"],
+ ["    for j in (12, 13): F[j, j] = -1.0 / TAU_C; Qc[j, j] = 2 * SC ** 2 / TAU_C; P0[j, j] = SC ** 2",
+  "    for j in (12, 13): F[j, j] = -1.0 / TAU_C; Qc[j, j] = 2 * SC ** 2 / TAU_C; P0[j, j] = (SC if SC0 is None else SC0) ** 2"],
+ ["    def __init__(self, D):\n        self.D = D; N = D.N0; self.N = N; self.fs = D.fs; self.t = D.t; self.valid = D.valid[:N]; self.nch = (N + CH - 1) // CH\n        self.bridge = Bridge(D); self.gs = GravitySmoother(D, CFG[\"gs_dec\"], TAU_G, CFG[\"k2\"]);",
+  "    def __init__(self, D, tau_g=None):\n        self.D = D; N = D.N0; self.N = N; self.fs = D.fs; self.t = D.t; self.valid = D.valid[:N]; self.nch = (N + CH - 1) // CH\n        self.bridge = Bridge(D); self.gs = GravitySmoother(D, CFG[\"gs_dec\"], TAU_G if tau_g is None else tau_g, CFG[\"k2\"]);"],
+ ["    F = Front(D); base = Bias(",
+  "    F = Front(D, CFG[\"tau_g_rotor\"] if rotor else CFG[\"tau_g_hand\"]); base = Bias("]
+]

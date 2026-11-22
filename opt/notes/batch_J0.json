@@ -1,0 +1,10 @@
+[
+ {
+  "id": "DEV0-dev-identity-J",
+  "src": "../src/snapshots/main_dev_J.py",
+  "config": {},
+  "title": "Snapshot J with defaults must equal the champion",
+  "hypothesis": "identity",
+  "parent": "CHAMP-1.0.0"
+ }
+]

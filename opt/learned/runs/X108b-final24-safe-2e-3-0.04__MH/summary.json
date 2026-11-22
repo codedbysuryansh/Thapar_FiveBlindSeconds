@@ -1,0 +1,322 @@
+{
+ "MH_01_easy_A1001": {
+  "name": "MH_01_easy",
+  "rmse_net": 0.7251628637313843,
+  "rmse_zero": 0.5320574045181274,
+  "rmse_phys": 0.2539416253566742,
+  "rmse_fused_ideal": 0.42238107323646545,
+  "sigma_mean": 0.3594757318496704
+ },
+ "MH_02_easy_A1001": {
+  "name": "MH_02_easy",
+  "rmse_net": 0.862582802772522,
+  "rmse_zero": 0.5724303126335144,
+  "rmse_phys": 0.288886159658432,
+  "rmse_fused_ideal": 0.5071470141410828,
+  "sigma_mean": 0.37509360909461975
+ },
+ "MH_03_medium_A1001": {
+  "name": "MH_03_medium",
+  "rmse_net": 0.8134215474128723,
+  "rmse_zero": 1.2431392669677734,
+  "rmse_phys": 0.24898919463157654,
+  "rmse_fused_ideal": 0.4887309670448303,
+  "sigma_mean": 0.39720064401626587
+ },
+ "MH_04_difficult_A1001": {
+  "name": "MH_04_difficult",
+  "rmse_net": 0.8228044509887695,
+  "rmse_zero": 1.162718415260315,
+  "rmse_phys": 0.3410947024822235,
+  "rmse_fused_ideal": 0.5078194737434387,
+  "sigma_mean": 0.38706380128860474
+ },
+ "MH_05_difficult_A1001": {
+  "name": "MH_05_difficult",
+  "rmse_net": 0.7961395382881165,
+  "rmse_zero": 1.0644954442977905,
+  "rmse_phys": 0.41294482350349426,
+  "rmse_fused_ideal": 0.5325434803962708,
+  "sigma_mean": 0.3461770713329315
+ },
+ "MH_01_easy_B1001": {
+  "name": "MH_01_easy",
+  "rmse_net": 0.7580114006996155,
+  "rmse_zero": 0.5320574045181274,
+  "rmse_phys": 0.3202947676181793,
+  "rmse_fused_ideal": 0.4576691687107086,
+  "sigma_mean": 0.3952922523021698
+ },
+ "MH_02_easy_B1001": {
+  "name": "MH_02_easy",
+  "rmse_net": 0.8759259581565857,
+  "rmse_zero": 0.5724303126335144,
+  "rmse_phys": 0.24562464654445648,
+  "rmse_fused_ideal": 0.48168325424194336,
+  "sigma_mean": 0.3914315104484558
+ },
+ "MH_03_medium_B1001": {
+  "name": "MH_03_medium",
+  "rmse_net": 0.827541172504425,
+  "rmse_zero": 1.2431392669677734,
+  "rmse_phys": 0.324064701795578,
+  "rmse_fused_ideal": 0.5216598510742188,
+  "sigma_mean": 0.4107931852340698
+ },
+ "MH_04_difficult_B1001": {
+  "name": "MH_04_difficult",
+  "rmse_net": 0.7967290282249451,
+  "rmse_zero": 1.162718415260315,
+  "rmse_phys": 0.3798743784427643,
+  "rmse_fused_ideal": 0.5127986669540405,
+  "sigma_mean": 0.39173516631126404
+ },
+ "MH_05_difficult_B1001": {
+  "name": "MH_05_difficult",
+  "rmse_net": 0.7913583517074585,
+  "rmse_zero": 1.0644954442977905,
+  "rmse_phys": 0.4049553871154785,
+  "rmse_fused_ideal": 0.5230725407600403,
+  "sigma_mean": 0.34827932715415955
+ },
+ "MH_01_easy_A1002": {
+  "name": "MH_01_easy",
+  "rmse_net": 0.7253981828689575,
+  "rmse_zero": 0.533155083656311,
+  "rmse_phys": 0.26291462779045105,
+  "rmse_fused_ideal": 0.4326868951320648,
+  "sigma_mean": 0.36937543749809265
+ },
+ "MH_02_easy_A1002": {
+  "name": "MH_02_easy",
+  "rmse_net": 0.8550361394882202,
+  "rmse_zero": 0.5724303126335144,
+  "rmse_phys": 0.2391001582145691,
+  "rmse_fused_ideal": 0.46239274740219116,
+  "sigma_mean": 0.37459006905555725
+ },
+ "MH_03_medium_A1002": {
+  "name": "MH_03_medium",
+  "rmse_net": 0.810858964920044,
+  "rmse_zero": 1.2408292293548584,
+  "rmse_phys": 0.24834658205509186,
+  "rmse_fused_ideal": 0.49046722054481506,
+  "sigma_mean": 0.3997836709022522
+ },
+ "MH_04_difficult_A1002": {
+  "name": "MH_04_difficult",
+  "rmse_net": 0.817118227481842,
+  "rmse_zero": 1.162718415260315,
+  "rmse_phys": 0.3011804521083832,
+  "rmse_fused_ideal": 0.5003800988197327,
+  "sigma_mean": 0.38679948449134827
+ },
+ "MH_05_difficult_A1002": {
+  "name": "MH_05_difficult",
+  "rmse_net": 0.7964165806770325,
+  "rmse_zero": 1.0637365579605103,
+  "rmse_phys": 0.35574501752853394,
+  "rmse_fused_ideal": 0.5159469246864319,
+  "sigma_mean": 0.3435429036617279
+ },
+ "MH_01_easy_B1002": {
+  "name": "MH_01_easy",
+  "rmse_net": 0.7141284942626953,
+  "rmse_zero": 0.533155083656311,
+  "rmse_phys": 0.3014487326145172,
+  "rmse_fused_ideal": 0.42844557762145996,
+  "sigma_mean": 0.3798065483570099
+ },
+ "MH_02_easy_B1002": {
+  "name": "MH_02_easy",
+  "rmse_net": 0.8543798923492432,
+  "rmse_zero": 0.5724303126335144,
+  "rmse_phys": 0.3094871938228607,
+  "rmse_fused_ideal": 0.49717962741851807,
+  "sigma_mean": 0.39501824975013733
+ },
+ "MH_03_medium_B1002": {
+  "name": "MH_03_medium",
+  "rmse_net": 0.8179660439491272,
+  "rmse_zero": 1.2408292293548584,
+  "rmse_phys": 0.306725412607193,
+  "rmse_fused_ideal": 0.5149949789047241,
+  "sigma_mean": 0.4061422646045685
+ },
+ "MH_04_difficult_B1002": {
+  "name": "MH_04_difficult",
+  "rmse_net": 0.8317127823829651,
+  "rmse_zero": 1.162718415260315,
+  "rmse_phys": 0.34011608362197876,
+  "rmse_fused_ideal": 0.5252479314804077,
+  "sigma_mean": 0.39069023728370667
+ },
+ "MH_05_difficult_B1002": {
+  "name": "MH_05_difficult",
+  "rmse_net": 0.7897657752037048,
+  "rmse_zero": 1.0637365579605103,
+  "rmse_phys": 0.39261394739151,
+  "rmse_fused_ideal": 0.5346800684928894,
+  "sigma_mean": 0.35232487320899963
+ },
+ "MH_01_easy_A1003": {
+  "name": "MH_01_easy",
+  "rmse_net": 0.7252275347709656,
+  "rmse_zero": 0.533155083656311,
+  "rmse_phys": 0.25971904397010803,
+  "rmse_fused_ideal": 0.43035364151000977,
+  "sigma_mean": 0.3702779710292816
+ },
+ "MH_02_easy_A1003": {
+  "name": "MH_02_easy",
+  "rmse_net": 0.8610937595367432,
+  "rmse_zero": 0.5724303126335144,
+  "rmse_phys": 0.25110772252082825,
+  "rmse_fused_ideal": 0.481059193611145,
+  "sigma_mean": 0.37588390707969666
+ },
+ "MH_03_medium_A1003": {
+  "name": "MH_03_medium",
+  "rmse_net": 0.8145347833633423,
+  "rmse_zero": 1.2408292293548584,
+  "rmse_phys": 0.2738206386566162,
+  "rmse_fused_ideal": 0.5027945637702942,
+  "sigma_mean": 0.39886152744293213
+ },
+ "MH_04_difficult_A1003": {
+  "name": "MH_04_difficult",
+  "rmse_net": 0.8238988518714905,
+  "rmse_zero": 1.162718415260315,
+  "rmse_phys": 0.33207982778549194,
+  "rmse_fused_ideal": 0.523623526096344,
+  "sigma_mean": 0.3818957507610321
+ },
+ "MH_05_difficult_A1003": {
+  "name": "MH_05_difficult",
+  "rmse_net": 0.8008286952972412,
+  "rmse_zero": 1.0644954442977905,
+  "rmse_phys": 0.43660399317741394,
+  "rmse_fused_ideal": 0.5433407425880432,
+  "sigma_mean": 0.34418708086013794
+ },
+ "MH_01_easy_B1003": {
+  "name": "MH_01_easy",
+  "rmse_net": 0.7141188979148865,
+  "rmse_zero": 0.533155083656311,
+  "rmse_phys": 0.30161619186401367,
+  "rmse_fused_ideal": 0.42703062295913696,
+  "sigma_mean": 0.39233991503715515
+ },
+ "MH_02_easy_B1003": {
+  "name": "MH_02_easy",
+  "rmse_net": 0.859137237071991,
+  "rmse_zero": 0.5724303126335144,
+  "rmse_phys": 0.26880884170532227,
+  "rmse_fused_ideal": 0.4862922430038452,
+  "sigma_mean": 0.39124414324760437
+ },
+ "MH_03_medium_B1003": {
+  "name": "MH_03_medium",
+  "rmse_net": 0.8403194546699524,
+  "rmse_zero": 1.2408292293548584,
+  "rmse_phys": 0.4276541769504547,
+  "rmse_fused_ideal": 0.5767345428466797,
+  "sigma_mean": 0.4207019507884979
+ },
+ "MH_04_difficult_B1003": {
+  "name": "MH_04_difficult",
+  "rmse_net": 0.8394064903259277,
+  "rmse_zero": 1.162718415260315,
+  "rmse_phys": 0.3622613549232483,
+  "rmse_fused_ideal": 0.5449711680412292,
+  "sigma_mean": 0.3952796161174774
+ },
+ "MH_05_difficult_B1003": {
+  "name": "MH_05_difficult",
+  "rmse_net": 0.8138323426246643,
+  "rmse_zero": 1.0644954442977905,
+  "rmse_phys": 0.40866437554359436,
+  "rmse_fused_ideal": 0.5390574336051941,
+  "sigma_mean": 0.3579148054122925
+ },
+ "MH_01_easy_A1004": {
+  "name": "MH_01_easy",
+  "rmse_net": 0.7216520309448242,
+  "rmse_zero": 0.533155083656311,
+  "rmse_phys": 0.25974202156066895,
+  "rmse_fused_ideal": 0.42632341384887695,
+  "sigma_mean": 0.36553382873535156
+ },
+ "MH_02_easy_A1004": {
+  "name": "MH_02_easy",
+  "rmse_net": 0.8549395799636841,
+  "rmse_zero": 0.5724303126335144,
+  "rmse_phys": 0.30348309874534607,
+  "rmse_fused_ideal": 0.4816133379936218,
+  "sigma_mean": 0.3759043514728546
+ },
+ "MH_03_medium_A1004": {
+  "name": "MH_03_medium",
+  "rmse_net": 0.8175932168960571,
+  "rmse_zero": 1.2408292293548584,
+  "rmse_phys": 0.245635524392128,
+  "rmse_fused_ideal": 0.49727749824523926,
+  "sigma_mean": 0.40509578585624695
+ },
+ "MH_04_difficult_A1004": {
+  "name": "MH_04_difficult",
+  "rmse_net": 0.8211847543716431,
+  "rmse_zero": 1.162718415260315,
+  "rmse_phys": 0.31122756004333496,
+  "rmse_fused_ideal": 0.5010353326797485,
+  "sigma_mean": 0.38136938214302063
+ },
+ "MH_05_difficult_A1004": {
+  "name": "MH_05_difficult",
+  "rmse_net": 0.8015341758728027,
+  "rmse_zero": 1.062265157699585,
+  "rmse_phys": 0.29836568236351013,
+  "rmse_fused_ideal": 0.5083884596824646,
+  "sigma_mean": 0.3437986969947815
+ },
+ "MH_01_easy_B1004": {
+  "name": "MH_01_easy",
+  "rmse_net": 0.7305622696876526,
+  "rmse_zero": 0.533155083656311,
+  "rmse_phys": 0.30792081356048584,
+  "rmse_fused_ideal": 0.44650596380233765,
+  "sigma_mean": 0.37931933999061584
+ },
+ "MH_02_easy_B1004": {
+  "name": "MH_02_easy",
+  "rmse_net": 0.8937151432037354,
+  "rmse_zero": 0.5724303126335144,
+  "rmse_phys": 0.2892819046974182,
+  "rmse_fused_ideal": 0.5130583047866821,
+  "sigma_mean": 0.3955191373825073
+ },
+ "MH_03_medium_B1004": {
+  "name": "MH_03_medium",
+  "rmse_net": 0.8096873760223389,
+  "rmse_zero": 1.2408292293548584,
+  "rmse_phys": 0.30576470494270325,
+  "rmse_fused_ideal": 0.5069093108177185,
+  "sigma_mean": 0.40608692169189453
+ },
+ "MH_04_difficult_B1004": {
+  "name": "MH_04_difficult",
+  "rmse_net": 0.8283160924911499,
+  "rmse_zero": 1.162718415260315,
+  "rmse_phys": 0.4071749150753021,
+  "rmse_fused_ideal": 0.5277780294418335,
+  "sigma_mean": 0.3922475278377533
+ },
+ "MH_05_difficult_B1004": {
+  "name": "MH_05_difficult",
+  "rmse_net": 0.7858020067214966,
+  "rmse_zero": 1.062265157699585,
+  "rmse_phys": 0.3238513469696045,
+  "rmse_fused_ideal": 0.5010959506034851,
+  "sigma_mean": 0.35147660970687866
+ }
+}

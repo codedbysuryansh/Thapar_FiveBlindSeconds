@@ -1,0 +1,8 @@
+[
+ ["    open(os.path.join(OPT, \"REGISTRY.md\"), \"w\").write(\"\\n\".join(L) + \"\\n\")",
+  "    if reg.get(\"analyses\"):\n        L += [\"# Analyses and diagnostic experiments (not candidates)\", \"\"]\n        for aid, e in sorted(reg[\"analyses\"].items()):\n            L += [\"## %s - %s\" % (aid, e.get(\"title\", \"\")), \"\", \"- Status: **%s**\" % e.get(\"status\", \"\"), \"- Question: %s\" % e.get(\"question\", \"\"), \"- Method: %s\" % e.get(\"method\", \"\"),\n                  \"- Result: %s\" % e.get(\"result\", \"\"), \"- Decision: %s\" % e.get(\"decision\", \"\"), \"- Files: %s\" % e.get(\"files\", \"\"), \"\"]\n    open(os.path.join(OPT, \"REGISTRY.md\"), \"w\").write(\"\\n\".join(L) + \"\\n\")"],
+ ["    sub.add_parser(\"registry\")",
+  "    sub.add_parser(\"registry\")\n    an = sub.add_parser(\"analysis\"); an.add_argument(\"id\"); an.add_argument(\"--title\", required=True); an.add_argument(\"--status\", required=True); an.add_argument(\"--question\", required=True)\n    an.add_argument(\"--method\", required=True); an.add_argument(\"--result\", required=True); an.add_argument(\"--decision\", required=True); an.add_argument(\"--files\", default=\"\")"],
+ ["    elif a.cmd == \"decide\": decide(a)",
+  "    elif a.cmd == \"decide\": decide(a)\n    elif a.cmd == \"analysis\":\n        with reg_txn() as reg: reg.setdefault(\"analyses\", {})[a.id] = dict(title=a.title, status=a.status, question=a.question, method=a.method, result=a.result, decision=a.decision, files=a.files, date=datetime.datetime.now().isoformat(timespec=\"seconds\"))"]
+]

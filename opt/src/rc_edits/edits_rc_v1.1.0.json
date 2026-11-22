@@ -1,0 +1,23 @@
+[
+ ["__version__ = \"1.0.0\"", "__version__ = \"1.1.0\""],
+ ["CFG = dict(k2=0.25, gate=0.035, thr_hand=2.0e-3, health=0.9, lam2=3.0, knot=20.0, gap_ref=2.0, dec_rotor=8, dec_hand=2, guard=12.0, gs_dec=16)",
+  "CFG = dict(k2=0.25, gate=0.035, thr_hand=2.0e-3, health=0.9, lam2=3.0, knot=20.0, gap_ref=2.0, dec_rotor=8, dec_hand=2, guard=12.0, gs_dec=16,\n           rest_frac=0.5, rest_gate=0.06, switch_r=1.7)"],
+ ["SD_DRAG, SZ, BIAS_JUMP, TAU_C, SC, LEVER_PRIOR, TAU_G = 1.4, 0.02, 0.5, 100.0, 0.15, 0.15, 3.0",
+  "SD_DRAG, SZ, BIAS_JUMP, TAU_C, SC, LEVER_PRIOR, TAU_G = 1.4, 0.02, 0.5, 100.0, 0.15, 0.15, 3.0\nTAU_G_HAND = 24.0                                 # gravity-smoother time constant on the hand-held path [s]\nDRAG_STEADY = (0.03, 1000.0, 0.15)                # drag-row bias prior in a large workspace: stationary sd, time constant, initial sd"],
+ ["def model_rotor():\n", "def model_rotor(drag=None):\n"],
+ ["    for j in (12, 13): F[j, j] = -1.0 / TAU_C; Qc[j, j] = 2 * SC ** 2 / TAU_C; P0[j, j] = SC ** 2",
+  "    sc, tauc, sc0 = drag if drag is not None else (SC, TAU_C, SC)\n    for j in (12, 13): F[j, j] = -1.0 / tauc; Qc[j, j] = 2 * sc ** 2 / tauc; P0[j, j] = sc0 ** 2"],
+ ["    lock = thrust_lock_fill(D); anchors, zm = rest_info(D); D.set_zmask(zm)",
+  "    lock = thrust_lock_fill(D); anchors, zm = rest_info(D, frac=CFG[\"rest_frac\"], gate=CFG[\"rest_gate\"]); D.set_zmask(zm)"],
+ ["    def __init__(self, D):\n        self.D = D; N = D.N0; self.N = N; self.fs = D.fs; self.t = D.t; self.valid = D.valid[:N]; self.nch = (N + CH - 1) // CH\n        self.bridge = Bridge(D); self.gs = GravitySmoother(D, CFG[\"gs_dec\"], TAU_G, CFG[\"k2\"]);",
+  "    def __init__(self, D, tau_g=TAU_G):\n        self.D = D; N = D.N0; self.N = N; self.fs = D.fs; self.t = D.t; self.valid = D.valid[:N]; self.nch = (N + CH - 1) // CH\n        self.bridge = Bridge(D); self.gs = GravitySmoother(D, CFG[\"gs_dec\"], tau_g, CFG[\"k2\"]);"],
+ ["    F = Front(D); base = Bias(", "    F = Front(D, TAU_G if rotor else TAU_G_HAND); base = Bias("],
+ ["            zb, e1, e2 = _thrust_frame(acc[\"z\"] / nv); self.e = (e1, e2); md = v & fl[:N0]; del fl; cd = np.zeros(K, np.int8)",
+  "            zb, e1, e2 = _thrust_frame(acc[\"z\"] / nv); self.e = (e1, e2); md = v & fl[:N0]; del fl; cd = np.zeros(K, np.int8)\n            md &= ~D.zmask(0, N0)                                       # no drag rows at genuine rest: on the ground they measure the ground reaction"],
+ ["def smooth_rotor(M):\n", "def smooth_rotor(M, drag=None):\n"],
+ ["    F, Qc, P0, H4 = model_rotor(); n = 17;", "    F, Qc, P0, H4 = model_rotor(drag); n = 17;"],
+ ["        pk, vk = smooth_rotor(Mz); rr = radius(Mz.bt, pk, vk); bt = Mz.bt; _mark(\"smoother-rotor\")",
+  "        pk, vk = smooth_rotor(Mz); rr = radius(Mz.bt, pk, vk); bt = Mz.bt\n        if rr >= CFG[\"switch_r\"]:                                     # large workspace: steady drag offset, smoothed again\n            del pk, vk; pk, vk = smooth_rotor(Mz, DRAG_STEADY); rr = radius(Mz.bt, pk, vk); steady = True\n        _mark(\"smoother-rotor\")"],
+ ["_mark(\"measurements\"); guard = False; t = D.t", "_mark(\"measurements\"); guard = False; steady = False; t = D.t"],
+ ["    info = dict(rotor_gate=bool(rotor), rotor=bool(is_rotor), guard=guard,", "    info = dict(rotor_gate=bool(rotor), rotor=bool(is_rotor), guard=guard, steady_drag=steady,"]
+]

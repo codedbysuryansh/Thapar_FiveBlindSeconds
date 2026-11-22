@@ -1,0 +1,13 @@
+T4 subset all, families E46,E55,E60: 935 cases
+X108b-final24-safe-2e-3-0.04       errors 0 fallbacks 0 | ATE   -4.0 % (hand   +1.9, rotor   -6.0) wp   -2.9 blind   -4.3 drop   -7.3 | worse>25 %: 8/833
+      worst: acc_ramp_1 +15%, ramp_r_0.01 +2%, ramp_x_0.01 +1%, rampwin_0.05_10s_persist +1%, gap_3x4 +1%
+X110a-guardloose                   errors 0 fallbacks 0 | ATE   -4.3 % (hand   -0.2, rotor   -5.3) wp   -2.8 blind   -5.9 drop   -7.7 | worse>25 %: 17/833
+      worst: acc_ramp_1 +17%, ramp_r_0.01 +2%, ramp_r_0.0005 +1%, ramp_x_0.01 +1%, rampwin_0.05_10s_persist +1%
+X110b-guardloose-final12           errors 0 fallbacks 0 | ATE   -4.3 % (hand   -0.2, rotor   -5.3) wp   -2.8 blind   -5.8 drop   -7.7 | worse>25 %: 16/833
+      worst: acc_ramp_1 +17%, ramp_r_0.01 +2%, ramp_r_0.0005 +2%, ramp_x_0.01 +1%, rampwin_0.05_10s_persist +1%
+X110c-guardloose-final8            errors 0 fallbacks 0 | ATE   -4.3 % (hand   -0.1, rotor   -5.3) wp   -2.8 blind   -5.8 drop   -7.7 | worse>25 %: 15/833
+      worst: acc_ramp_1 +17%, ramp_r_0.01 +2%, ramp_r_0.0005 +1%, ramp_x_0.01 +1%, rampwin_0.05_10s_persist +1%
+X111a-blend-1.5-2.0                errors 0 fallbacks 0 | ATE   -4.1 % (hand   -0.2, rotor   -5.0) wp   -2.6 blind   -5.2 drop   -7.4 | worse>25 %: 17/833
+      worst: acc_ramp_1 +19%, ramp_r_0.01 +2%, ramp_r_0.0005 +2%, rampwin_0.05_10s_persist +1%, gap_3x4 +1%
+X111b-blend-1.6-1.9                errors 0 fallbacks 0 | ATE   -4.1 % (hand   -0.2, rotor   -5.1) wp   -2.6 blind   -5.5 drop   -7.4 | worse>25 %: 16/833
+      worst: acc_ramp_1 +18%, ramp_r_0.01 +2%, ramp_r_0.0005 +2%, rampwin_0.05_10s_persist +1%, gap_3x4 +1%

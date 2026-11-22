@@ -1,0 +1,140 @@
+[
+ {
+  "id": "X110a-guardloose",
+  "src": "../src/snapshots/main_dev_K.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "loose"
+    }
+   }
+  },
+  "title": "X108b + radius guard on the loose solution before the drag switch",
+  "hypothesis": "The guard threshold (12x) was calibrated on loose rotor solutions; checking it there removes the guard flips without changing any official-data decision",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ },
+ {
+  "id": "X110b-guardloose-final12",
+  "src": "../src/snapshots/main_dev_K.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 12.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "loose"
+    }
+   }
+  },
+  "title": "X110a + 12 s final hand-held gravity (clean-gyro conditions unchanged)",
+  "hypothesis": "A 12 s final gravity keeps the DEV TUM-VI gain of 24 s (X108d -7.98 % vs -7.95 %) and integrates gyro faults over half the time",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ },
+ {
+  "id": "X110c-guardloose-final8",
+  "src": "../src/snapshots/main_dev_K.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 8.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "loose"
+    }
+   }
+  },
+  "title": "X110a + 8 s final hand-held gravity (clean-gyro conditions unchanged)",
+  "hypothesis": "An 8 s final gravity is still more robust to gyro faults at a small accuracy cost",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ },
+ {
+  "id": "X111a-blend-1.5-2.0",
+  "src": "../src/snapshots/main_dev_K.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "loose",
+     "switch_blend": [
+      1.5,
+      2.0
+     ]
+    }
+   }
+  },
+  "title": "X110a + soft switch: weight of the steady solution = clip((rr0 - 1.5) / 0.5, 0, 1)",
+  "hypothesis": "A soft switch removes the knife-edge at 1.7 m (MH_02) and halves the damage of marginal misfires",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ },
+ {
+  "id": "X111b-blend-1.6-1.9",
+  "src": "../src/snapshots/main_dev_K.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "guard_ref": "loose",
+     "switch_blend": [
+      1.6,
+      1.9
+     ]
+    }
+   }
+  },
+  "title": "X110a + soft switch: weight = clip((rr0 - 1.6) / 0.3, 0, 1)",
+  "hypothesis": "A narrow soft switch around 1.7 m keeps the hard-switch decisions away from the edge",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ }
+]

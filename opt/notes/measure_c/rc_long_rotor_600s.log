@@ -1,0 +1,5 @@
+long_rotor_600s.zip: 116494 rows, 600.0 s of IMU on Apple M3 Pro (macOS-27.2.1-arm64-arm-64bit, Python 3.12.7, NumPy 2.5.4)
+  heap peak MB: after imports 6.857 | after numpy 7.356 | whole program 14.830 | with interpreter start-up 16.640
+  run: 3.992 s min, 4.009 s median -> 6.65 / 6.68 ms per IMU-second
+  start-up (median s): python 0.016, + import numpy 0.052, + import main 0.054; end to end 4.091 s = 6.82 ms per IMU-second
+  stages (s / heap MB): parse+grid 0.171/4.96, repair 0.048/4.65, lock+rest 0.054/6.12, front-const 0.131/6.00, front-final 1.076/6.86, measurements 0.243/6.64, guard-hand 0.330/6.30, smoother-rotor 1.631/6.66, output 0.307/5.95

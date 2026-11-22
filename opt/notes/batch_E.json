@@ -1,0 +1,100 @@
+[
+ {
+  "id": "DEV0-dev-identity-E",
+  "src": "../src/snapshots/main_dev_E.py",
+  "config": {},
+  "title": "main_dev.py (batch E build) with every flag off",
+  "hypothesis": "Flags off must reproduce the champion byte for byte",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X042a-rest-dragoff-loose",
+  "src": "../src/snapshots/main_dev_E.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1
+    }
+   }
+  },
+  "title": "Rest 50 %/0.06, no drag rows at rest, champion drag-bias prior",
+  "hypothesis": "Drag rows are invalid during ground contact with rotors spinning; excluding them where rest is detected keeps the ground-reaction offset out of the drag-bias estimate (an08)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X042b-rest-dragoff-sc0.1-tau300",
+  "src": "../src/snapshots/main_dev_E.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1
+    },
+    "SC": 0.1,
+    "TAU_C": 300.0
+   }
+  },
+  "title": "Rest 50 %/0.06, no drag rows at rest, drag bias 0.1/300",
+  "hypothesis": "Drag rows are invalid during ground contact with rotors spinning; excluding them where rest is detected keeps the ground-reaction offset out of the drag-bias estimate (an08)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X042c-rest-dragoff-p16b",
+  "src": "../src/snapshots/main_dev_E.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1
+    },
+    "SC0": 0.15,
+    "SC": 0.05,
+    "TAU_C": 300.0
+   }
+  },
+  "title": "Rest 50 %/0.06, no drag rows at rest, drag bias 0.15/0.05/300",
+  "hypothesis": "Drag rows are invalid during ground contact with rotors spinning; excluding them where rest is detected keeps the ground-reaction offset out of the drag-bias estimate (an08)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X042d-rest-dragoff-p16a",
+  "src": "../src/snapshots/main_dev_E.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1
+    },
+    "SC0": 0.15,
+    "SC": 0.03,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "Rest 50 %/0.06, no drag rows at rest, drag bias 0.15/0.03/1000",
+  "hypothesis": "Drag rows are invalid during ground contact with rotors spinning; excluding them where rest is detected keeps the ground-reaction offset out of the drag-bias estimate (an08)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X042e-rest-dragoff-sc0.1-tau1000",
+  "src": "../src/snapshots/main_dev_E.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1
+    },
+    "SC": 0.1,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "Rest 50 %/0.06, no drag rows at rest, drag bias 0.1/1000",
+  "hypothesis": "Drag rows are invalid during ground contact with rotors spinning; excluding them where rest is detected keeps the ground-reaction offset out of the drag-bias estimate (an08)",
+  "parent": "CHAMP-1.0.0"
+ }
+]

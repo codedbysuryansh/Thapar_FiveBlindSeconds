@@ -1,0 +1,4 @@
+T6 (container, rc): 6/6 pass -> PASS
+T6: PASS (3 environments, host Darwin arm64)
+T7: 37/37 cases pass -> PASS
+renderer vs %-formatting: 10000000 random rows, 0 mismatching; edge cases mismatch: False; 29 s -> PASS

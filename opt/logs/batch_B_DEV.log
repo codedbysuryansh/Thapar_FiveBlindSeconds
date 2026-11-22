@@ -1,0 +1,22 @@
+candidate DEV0-dev-identity-B created (main.py 155a879d7f2d4877)
+DEV0-dev-identity-B                ALL  +0.00% [ +0.00, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 136 fail 0 dec 0 | ms 7.49->7.58
+candidate X041a-rest_frac-0.15 created (main.py 155a879d7f2d4877)
+X041a-rest_frac-0.15               ALL  -0.52% [ -1.11, -0.04] | EuRoC  -0.57% [ -1.22, -0.03] | TUM  +0.00% [ +0.00, +0.00] | ate  -1.2/ +0.0 | ident 50 fail 0 dec 0 | ms 7.49->11.69
+candidate X041b-rest_frac-0.30 created (main.py 155a879d7f2d4877)
+X041b-rest_frac-0.30               ALL  -0.83% [ -1.48, -0.16] | EuRoC  -0.90% [ -1.60, -0.16] | TUM  +0.00% [ +0.00, +0.00] | ate  -1.9/ +0.0 | ident 50 fail 0 dec 0 | ms 7.49->7.70
+candidate X041c-rest_frac-0.30-gate-0.05 created (main.py 155a879d7f2d4877)
+X041c-rest_frac-0.30-gate-0.05     ALL  -1.20% [ -2.17, -0.13] | EuRoC  -1.31% [ -2.38, -0.14] | TUM  +0.00% [ +0.00, +0.00] | ate  -2.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.70
+candidate X041d-rest_frac-0.50-gate-0.05 created (main.py 155a879d7f2d4877)
+X041d-rest_frac-0.50-gate-0.05     ALL  -1.30% [ -2.31, -0.20] | EuRoC  -1.43% [ -2.51, -0.21] | TUM  +0.00% [ +0.00, +0.00] | ate  -2.1/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.75
+candidate X041e-rest30-g05-dragoff created (main.py 155a879d7f2d4877)
+X041e-rest30-g05-dragoff           ALL  -1.18% [ -2.20, -0.07] | EuRoC  -1.29% [ -2.41, -0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  -2.3/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.82
+candidate X041f-rest15-dragoff created (main.py 155a879d7f2d4877)
+X041f-rest15-dragoff               ALL  -0.53% [ -1.12, -0.06] | EuRoC  -0.59% [ -1.23, -0.06] | TUM  +0.00% [ +0.00, +0.00] | ate  -1.2/ +0.0 | ident 48 fail 0 dec 0 | ms 7.49->7.62
+candidate X001a-acccomp-1-hand created (main.py 155a879d7f2d4877)
+X001a-acccomp-1-hand               ALL  -0.38% [ -0.76, -0.12] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -4.67% [ -8.45, -1.57] | ate  +0.0/ -4.9 | ident 88 fail 0 dec 0 | ms 7.49->8.01
+candidate X001b-acccomp-2-hand created (main.py 155a879d7f2d4877)
+X001b-acccomp-2-hand               ALL  -0.45% [ -0.90, -0.11] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -5.44% [ -9.75, -1.07] | ate  +0.0/ -5.7 | ident 88 fail 0 dec 0 | ms 7.49->8.18
+candidate X001c-acccomp-1-both created (main.py 155a879d7f2d4877)
+X001c-acccomp-1-both               ALL  -1.40% [ -3.00, -0.27] | EuRoC  -1.11% [ -2.73, +0.06] | TUM  -4.67% [ -8.45, -1.57] | ate  -0.7/ -4.9 | ident 0 fail 0 dec 0 | ms 7.49->10.88
+candidate X001d-acccomp-1-hand-g05 created (main.py 155a879d7f2d4877)
+X001d-acccomp-1-hand-g05           ALL  -0.22% [ -0.41, -0.09] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  -2.66% [ -4.61, -1.22] | ate  +0.0/ -2.8 | ident 88 fail 0 dec 0 | ms 7.49->8.06

@@ -1,0 +1,5 @@
+long_hand_600s.zip: 116531 rows, 600.0 s of IMU on Apple M3 Pro (macOS-27.2.1-arm64-arm-64bit, Python 3.12.7, NumPy 2.5.4)
+  heap peak MB: after imports 6.687 | after numpy 7.186 | whole program 14.664 | with interpreter start-up 16.473
+  run: 2.677 s min, 2.693 s median -> 4.46 / 4.49 ms per IMU-second
+  start-up (median s): python 0.017, + import numpy 0.052, + import main 0.055; end to end 2.776 s = 4.63 ms per IMU-second
+  stages (s / heap MB): parse+grid 0.172/4.94, repair 0.039/4.64, lock+rest 0.053/6.10, front-const 0.355/5.98, front-final 0.436/6.06, measurements 0.136/6.53, smoother-hand 1.195/6.69, output 0.292/6.54

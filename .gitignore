@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.DS_Store
+# dataset-derived inputs are never committed (EuRoC licence); the submission bundle is the one exception
+*.zip
+!Thapar_FiveBlindSeconds.zip
+inputs/

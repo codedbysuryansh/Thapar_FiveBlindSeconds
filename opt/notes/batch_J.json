@@ -1,0 +1,110 @@
+[
+ {
+  "id": "X060a-velaid-loeo-s1",
+  "src": "../src/snapshots/main_dev_J.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "vel_aid_dir": "~/SamsungPRISM_FiveBlindSeconds/opt/learned/runs/X108b-final24-safe-2e-3-0.04__loeo",
+     "vel_aid_scale": 1.0
+    }
+   }
+  },
+  "title": "Velocity aid, held-out predictions (LOEO/LORO), predicted sigma x1",
+  "hypothesis": "Learned 1-D CNN body-velocity predictions (heteroscedastic) fused as velocity rows reduce drift where the physics has no ZUPT",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ },
+ {
+  "id": "X060b-velaid-loeo-s2",
+  "src": "../src/snapshots/main_dev_J.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "vel_aid_dir": "~/SamsungPRISM_FiveBlindSeconds/opt/learned/runs/X108b-final24-safe-2e-3-0.04__loeo",
+     "vel_aid_scale": 2.0
+    }
+   }
+  },
+  "title": "Velocity aid, held-out predictions (LOEO/LORO), predicted sigma x2",
+  "hypothesis": "Learned 1-D CNN body-velocity predictions (heteroscedastic) fused as velocity rows reduce drift where the physics has no ZUPT",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ },
+ {
+  "id": "X060c-velaid-inpool-s1",
+  "src": "../src/snapshots/main_dev_J.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "vel_aid_dir": "~/SamsungPRISM_FiveBlindSeconds/opt/learned/runs/X108b-final24-safe-2e-3-0.04__inpool",
+     "vel_aid_scale": 1.0
+    }
+   }
+  },
+  "title": "THREAT ONLY: velocity aid, in-pool predictions (test missions in training), sigma x1",
+  "hypothesis": "Learned 1-D CNN body-velocity predictions (heteroscedastic) fused as velocity rows reduce drift where the physics has no ZUPT",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ },
+ {
+  "id": "X060d-velaid-inpool-s2",
+  "src": "../src/snapshots/main_dev_J.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_mu_max": 0.002,
+     "final_sw_max": 0.04,
+     "vel_aid_dir": "~/SamsungPRISM_FiveBlindSeconds/opt/learned/runs/X108b-final24-safe-2e-3-0.04__inpool",
+     "vel_aid_scale": 2.0
+    }
+   }
+  },
+  "title": "THREAT ONLY: velocity aid, in-pool predictions (test missions in training), sigma x2",
+  "hypothesis": "Learned 1-D CNN body-velocity predictions (heteroscedastic) fused as velocity rows reduce drift where the physics has no ZUPT",
+  "parent": "X108b-final24-safe-2e-3-0.04"
+ }
+]

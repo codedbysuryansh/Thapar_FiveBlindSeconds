@@ -1,0 +1,26 @@
+candidate DEV0-dev-identity-G created (main.py 1072457a3f792997)
+DEV0-dev-identity-G                ALL  +0.00% [ +0.00, +0.00] | EuRoC  +0.00% [ +0.00, +0.00] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 136 fail 0 dec 0 | ms 7.63->7.73
+candidate X044-switch-r1.6-p16a created (main.py 1072457a3f792997)
+X044-switch-r1.6-p16a              ALL -11.82% [-20.29, -2.49] | EuRoC -12.90% [-21.81, -2.51] | TUM  +0.00% [ +0.00, +0.00] | ate -15.5/ +0.0 | ident 48 fail 0 dec 0 | ms 7.63->7.94
+candidate X044-switch-r1.7-p16a created (main.py 1072457a3f792997)
+X044-switch-r1.7-p16a              ALL -11.95% [-20.47, -2.71] | EuRoC -13.05% [-21.92, -2.63] | TUM  +0.00% [ +0.00, +0.00] | ate -15.4/ +0.0 | ident 48 fail 0 dec 0 | ms 7.63->7.96
+candidate X044-switch-r1.8-p16a created (main.py 1072457a3f792997)
+X044-switch-r1.8-p16a              ALL -11.03% [-20.22, -1.26] | EuRoC -12.04% [-21.71, -1.07] | TUM  +0.00% [ +0.00, +0.00] | ate -14.7/ +0.0 | ident 48 fail 0 dec 0 | ms 7.63->8.05
+candidate X044-switch-r1.7-p16b created (main.py 1072457a3f792997)
+X044-switch-r1.7-p16b              ALL -11.54% [-19.28, -2.92] | EuRoC -12.63% [-20.84, -3.01] | TUM  +0.00% [ +0.00, +0.00] | ate -13.7/ +0.0 | ident 48 fail 0 dec 0 | ms 7.63->7.89
+candidate X005a-hetacc created (main.py 1072457a3f792997)
+X005a-hetacc                       ALL  -0.02% [ -0.10, +0.04] | EuRoC  -0.02% [ -0.11, +0.04] | TUM  -0.00% [ -0.00, -0.00] | ate  -0.0/ -0.0 | ident 0 fail 0 dec 0 | ms 7.63->7.71
+candidate X005b-hetacc-narrow created (main.py 1072457a3f792997)
+X005b-hetacc-narrow                ALL  -0.02% [ -0.08, +0.03] | EuRoC  -0.02% [ -0.09, +0.03] | TUM  -0.00% [ -0.00, -0.00] | ate  -0.0/ -0.0 | ident 0 fail 0 dec 0 | ms 7.63->7.62
+candidate X030-blindtau-0.3 created (main.py 1072457a3f792997)
+X030-blindtau-0.3                  ALL  -0.04% [ -0.17, +0.07] | EuRoC  -0.04% [ -0.20, +0.08] | TUM  +0.00% [ +0.00, +0.00] | ate  -0.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.63->7.63
+candidate X030-blindtau-0.8 created (main.py 1072457a3f792997)
+X030-blindtau-0.8                  ALL  +0.06% [ -0.08, +0.24] | EuRoC  +0.07% [ -0.09, +0.27] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.63->7.54
+candidate X030-blindtau-1.2 created (main.py 1072457a3f792997)
+X030-blindtau-1.2                  ALL  +0.14% [ -0.15, +0.51] | EuRoC  +0.16% [ -0.17, +0.58] | TUM  +0.00% [ +0.00, +0.00] | ate  +0.0/ +0.0 | ident 48 fail 0 dec 0 | ms 7.63->7.58
+candidate X104-combo5 created (main.py 1072457a3f792997)
+X104-combo5                        ALL -12.70% [-21.04, -3.53] | EuRoC -13.05% [-21.92, -2.63] | TUM  -9.31% [-14.83, -0.17] | ate -15.4/ -9.1 | ident 0 fail 0 dec 0 | ms 7.63->7.91
+candidate X105-combo6 created (main.py 1072457a3f792997)
+X105-combo6                        ALL -12.75% [-21.09, -3.58] | EuRoC -13.05% [-21.92, -2.63] | TUM  -9.80% [-15.49, -0.34] | ate -15.4/ -9.3 | ident 0 fail 0 dec 0 | ms 7.63->9.41
+candidate X106-combo7 created (main.py 1072457a3f792997)
+X106-combo7                        ALL -12.72% [-21.06, -3.53] | EuRoC -13.07% [-21.94, -2.64] | TUM  -9.32% [-14.83, -0.17] | ate -15.4/ -9.1 | ident 0 fail 0 dec 0 | ms 7.63->7.99

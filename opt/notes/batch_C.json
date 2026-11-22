@@ -1,0 +1,330 @@
+[
+ {
+  "id": "DEV0-dev-identity-C",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {},
+  "title": "main_dev.py (batch C build) with every flag off",
+  "hypothesis": "Flags off must reproduce the champion byte for byte",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.04-tauc100",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.04,
+    "TAU_C": 100.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.04 m/s^2, tau 100 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.04-tauc300",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.04,
+    "TAU_C": 300.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.04 m/s^2, tau 300 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.04-tauc1000",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.04,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.04 m/s^2, tau 1000 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.06-tauc100",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.06,
+    "TAU_C": 100.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.06 m/s^2, tau 100 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.06-tauc300",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.06,
+    "TAU_C": 300.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.06 m/s^2, tau 300 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.06-tauc1000",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.06,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.06 m/s^2, tau 1000 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.08-tauc300",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.08,
+    "TAU_C": 300.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.08 m/s^2, tau 300 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.08-tauc1000",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.08,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.08 m/s^2, tau 1000 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.1-tauc100",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.1,
+    "TAU_C": 100.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.1 m/s^2, tau 100 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.1-tauc300",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.1,
+    "TAU_C": 300.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.1 m/s^2, tau 300 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P15-sc0.1-tauc1000",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC": 0.1,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "Drag-bias prior sd 0.1 m/s^2, tau 1000 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P16-sc0_0.15-sc0.05-tauc300",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC0": 0.15,
+    "SC": 0.05,
+    "TAU_C": 300.0
+   }
+  },
+  "title": "Drag bias: initial sd 0.15, stationary sd 0.05, tau 300 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC; the initial offset (sensor bias) and the drift (degradation random walk) need different priors",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P16-sc0_0.15-sc0.05-tauc1000",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC0": 0.15,
+    "SC": 0.05,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "Drag bias: initial sd 0.15, stationary sd 0.05, tau 1000 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC; the initial offset (sensor bias) and the drift (degradation random walk) need different priors",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "P16-sc0_0.15-sc0.03-tauc1000",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "SC0": 0.15,
+    "SC": 0.03,
+    "TAU_C": 1000.0
+   }
+  },
+  "title": "Drag bias: initial sd 0.15, stationary sd 0.03, tau 1000 s",
+  "hypothesis": "The drag-row bias (OU, tau 100 s, sd 0.15 m/s^2 = 0.8 m/s of velocity at k 0.19) is loose enough to absorb real velocity; batch A: sd 0.08 -4.4 %, tau 300 -2.3 % on EuRoC; the initial offset (sensor bias) and the drift (degradation random walk) need different priors",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X002-taug_hand-4.5",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "tau_g_hand": 4.5
+    }
+   }
+  },
+  "title": "Gravity time constant 4.5 s on the hand-held path only",
+  "hypothesis": "Hand-held tilt is limited by motion acceleration leaking into the 3 s gravity smoother (batch A: TAU_G 4.5/6 = -6.3/-7.9 % on TUM-VI, EuRoC neutral); make it platform-specific",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X002-taug_hand-6",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "tau_g_hand": 6.0
+    }
+   }
+  },
+  "title": "Gravity time constant 6 s on the hand-held path only",
+  "hypothesis": "Hand-held tilt is limited by motion acceleration leaking into the 3 s gravity smoother (batch A: TAU_G 4.5/6 = -6.3/-7.9 % on TUM-VI, EuRoC neutral); make it platform-specific",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X002-taug_hand-8",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "tau_g_hand": 8.0
+    }
+   }
+  },
+  "title": "Gravity time constant 8 s on the hand-held path only",
+  "hypothesis": "Hand-held tilt is limited by motion acceleration leaking into the 3 s gravity smoother (batch A: TAU_G 4.5/6 = -6.3/-7.9 % on TUM-VI, EuRoC neutral); make it platform-specific",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X002-taug_hand-12",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "tau_g_hand": 12.0
+    }
+   }
+  },
+  "title": "Gravity time constant 12 s on the hand-held path only",
+  "hypothesis": "Hand-held tilt is limited by motion acceleration leaking into the 3 s gravity smoother (batch A: TAU_G 4.5/6 = -6.3/-7.9 % on TUM-VI, EuRoC neutral); make it platform-specific",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X003-taug_hand-6-acccomp1",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "tau_g_hand": 6.0,
+     "acc_comp": 1
+    }
+   }
+  },
+  "title": "Hand-held: gravity tau 6 s + one acceleration-compensated gravity pass",
+  "hypothesis": "Hand-held tilt is limited by motion acceleration leaking into the 3 s gravity smoother (batch A: TAU_G 4.5/6 = -6.3/-7.9 % on TUM-VI, EuRoC neutral); make it platform-specific; X001 removes the leaked acceleration explicitly, so the two may add up or overlap",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X003-taug_hand-8-acccomp1",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "tau_g_hand": 8.0,
+     "acc_comp": 1
+    }
+   }
+  },
+  "title": "Hand-held: gravity tau 8 s + one acceleration-compensated gravity pass",
+  "hypothesis": "Hand-held tilt is limited by motion acceleration leaking into the 3 s gravity smoother (batch A: TAU_G 4.5/6 = -6.3/-7.9 % on TUM-VI, EuRoC neutral); make it platform-specific; X001 removes the leaked acceleration explicitly, so the two may add up or overlap",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X041g-rest50-g06",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06
+    }
+   }
+  },
+  "title": "Rest detector 50 %, gyro gate 0.06 rad/s",
+  "hypothesis": "Wider gyro gate admits the rotor-on ground windows of V1/V2 (still gyro sd 0.025-0.034)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X041h-rest50-g05-minw4",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.05,
+     "rest_minw": 4
+    }
+   }
+  },
+  "title": "Rest detector 50 %, gate 0.05, at least 4 windows (2 s)",
+  "hypothesis": "Longer minimum rest cluster reduces false rest in slow hover",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X100-combo1",
+  "src": "../src/snapshots/main_dev_C.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.05,
+     "tau_g_hand": 6.0,
+     "acc_comp": 1
+    },
+    "SC": 0.08
+   }
+  },
+  "title": "Combination 1: rest 50 %/0.05 + drag-bias sd 0.08 + hand-held tau_g 6 + acc-comp 1",
+  "hypothesis": "The accepted directions act on different parts (rest/drag on rotor, gravity on hand-held) and should add up",
+  "parent": "CHAMP-1.0.0"
+ }
+]

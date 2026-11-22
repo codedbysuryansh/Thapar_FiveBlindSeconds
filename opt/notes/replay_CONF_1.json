@@ -1,0 +1,100 @@
+[
+ {
+  "id": "X104-combo5",
+  "src": "~/SamsungPRISM_FiveBlindSeconds/opt/candidates/X104-combo5/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_hand": 24.0
+    }
+   }
+  },
+  "title": "Combination 5: rest + no drag at rest + switched drag prior (r 1.7, 0.15/0.03/1000) + hand-held tau_g 24",
+  "hypothesis": "Combination of the screened directions: rotor rest/ground handling + radius-switched drag prior; hand-held long gravity time constant (+ acceleration compensation)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X044-switch-r1.7-p16a",
+  "src": "~/SamsungPRISM_FiveBlindSeconds/opt/candidates/X044-switch-r1.7-p16a/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rest + no drag rows at rest + re-smooth with drag prior 0.15/0.03/1000 when radius >= 1.7 m",
+  "hypothesis": "an09: re-smoothing with the tight drag prior only when the loose rotor solution's radius is >= ~1.7 m keeps the MH gain (-18.7 %) without the V1 loss (+0.5 % instead of +8.9 %)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X002-taug_hand-24",
+  "src": "~/SamsungPRISM_FiveBlindSeconds/opt/candidates/X002-taug_hand-24/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "tau_g_hand": 24.0
+    }
+   }
+  },
+  "title": "Gravity time constant 24 s on the hand-held path",
+  "hypothesis": "Hand-held tilt improves monotonically with a longer gravity time constant up to 12 s (batch C); find where it turns",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X041g-rest50-g06",
+  "src": "~/SamsungPRISM_FiveBlindSeconds/opt/candidates/X041g-rest50-g06/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06
+    }
+   }
+  },
+  "title": "Rest detector 50 %, gyro gate 0.06 rad/s",
+  "hypothesis": "Wider gyro gate admits the rotor-on ground windows of V1/V2 (still gyro sd 0.025-0.034)",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X105-combo6",
+  "src": "~/SamsungPRISM_FiveBlindSeconds/opt/candidates/X105-combo6/main.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_hand": 24.0,
+     "acc_comp": 1
+    }
+   }
+  },
+  "title": "Combination 6: combination 5 + one acceleration-compensated gravity pass (hand-held)",
+  "hypothesis": "Combination of the screened directions: rotor rest/ground handling + radius-switched drag prior; hand-held long gravity time constant (+ acceleration compensation)",
+  "parent": "CHAMP-1.0.0"
+ }
+]

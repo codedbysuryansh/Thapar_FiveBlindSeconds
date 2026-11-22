@@ -1,0 +1,171 @@
+[
+ {
+  "id": "DEV0-dev-identity-H",
+  "src": "../src/snapshots/main_dev_H.py",
+  "config": {},
+  "title": "main_dev.py (batch H build) with every flag off",
+  "hypothesis": "Flags off must reproduce the champion byte for byte",
+  "parent": "CHAMP-1.0.0"
+ },
+ {
+  "id": "X107f-rotor-only",
+  "src": "../src/snapshots/main_dev_H.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ]
+    }
+   }
+  },
+  "title": "Rotor part of X104 only (rest + no drag at rest + switched drag prior); hand-held = champion",
+  "hypothesis": "Separates the rotor gain from the hand-held change",
+  "parent": "X104-combo5"
+ },
+ {
+  "id": "X107a-final24-const",
+  "src": "../src/snapshots/main_dev_H.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0
+    }
+   }
+  },
+  "title": "Hand-held: bias and mode from the 3 s front end; final attitude with 24 s gravity when the bias is constant",
+  "hypothesis": "Keep the robust 3 s gravity for bias estimation and the drift decision; use the long time constant only where it is safe",
+  "parent": "X104-combo5"
+ },
+ {
+  "id": "X107b-final12-const",
+  "src": "../src/snapshots/main_dev_H.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 12.0
+    }
+   }
+  },
+  "title": "Hand-held: as X107a with a 12 s final gravity",
+  "hypothesis": "Keep the robust 3 s gravity for bias estimation and the drift decision; use the long time constant only where it is safe",
+  "parent": "X104-combo5"
+ },
+ {
+  "id": "X107g-final8-const",
+  "src": "../src/snapshots/main_dev_H.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 8.0
+    }
+   }
+  },
+  "title": "Hand-held: as X107a with an 8 s final gravity",
+  "hypothesis": "Keep the robust 3 s gravity for bias estimation and the drift decision; use the long time constant only where it is safe",
+  "parent": "X104-combo5"
+ },
+ {
+  "id": "X107e-final24-always",
+  "src": "../src/snapshots/main_dev_H.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_final_hand": 24.0,
+     "final_const_only": 0
+    }
+   }
+  },
+  "title": "Hand-held: final attitude with 24 s gravity in both bias modes",
+  "hypothesis": "Keep the robust 3 s gravity for bias estimation and the drift decision; use the long time constant only where it is safe",
+  "parent": "X104-combo5"
+ },
+ {
+  "id": "X107c-taug6",
+  "src": "../src/snapshots/main_dev_H.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "tau_g_hand": 6.0
+    }
+   }
+  },
+  "title": "Hand-held: 6 s gravity everywhere on the hand-held path",
+  "hypothesis": "A moderate constant may keep most of the gain with less fragility",
+  "parent": "X104-combo5"
+ },
+ {
+  "id": "X107d-acccomp",
+  "src": "../src/snapshots/main_dev_H.py",
+  "config": {
+   "set": {
+    "CFG": {
+     "rest_frac": 0.5,
+     "rest_gate": 0.06,
+     "drag_off_rest": 1,
+     "drag_switch_r": 1.7,
+     "drag_tight": [
+      0.03,
+      1000.0,
+      0.15
+     ],
+     "acc_comp": 1
+    }
+   }
+  },
+  "title": "Hand-held: 3 s gravity + one acceleration-compensated gravity pass",
+  "hypothesis": "Removes leaked motion acceleration without slowing the tilt tracker",
+  "parent": "X104-combo5"
+ }
+]
